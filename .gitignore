@@ -10,5 +10,6 @@ ENV/
 call_records/
 *.wav
 
-# Configuration containing API Keys
-config.py
+# Configuration containing API Keys (only root-level user secret is ignored.
+# client_adb/config.py is the tracked default and reads everything from env.)
+/config.py

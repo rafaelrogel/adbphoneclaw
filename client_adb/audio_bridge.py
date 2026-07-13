@@ -2,12 +2,16 @@ import os
 import time
 import queue
 import logging
-import sounddevice as sd
 import soundfile as sf
 import numpy as np
 from client_adb.config import SAMPLE_RATE, CHANNELS, CHUNK_SIZE
 
 logger = logging.getLogger("PhoneClaw.AudioBridge")
+
+def _sd():
+    """Importa sounddevice sob demanda (evita falha de import em ambientes sem áudio)."""
+    import sounddevice as sd
+    return sd
 
 def list_audio_devices():
     """
@@ -15,6 +19,7 @@ def list_audio_devices():
     """
     logger.info("Listando dispositivos de áudio disponíveis:")
     try:
+        sd = _sd()
         devices = sd.query_devices()
         for idx, dev in enumerate(devices):
             input_channels = dev.get('max_input_channels', 0)
@@ -29,8 +34,9 @@ def find_device_index(name_pattern: str, is_input: bool = True) -> int:
     """
     if not name_pattern:
         return None
-        
+
     try:
+        sd = _sd()
         devices = sd.query_devices()
         for idx, dev in enumerate(devices):
             max_ch = dev.get('max_input_channels', 0) if is_input else dev.get('max_output_channels', 0)
@@ -50,6 +56,7 @@ def play_audio(file_path: str, device_index: int = None):
         return
 
     try:
+        sd = _sd()
         data, fs = sf.read(file_path)
         logger.info(f"Iniciando reprodução do áudio: {file_path} no dispositivo {device_index or 'padrão'}...")
         sd.play(data, fs, device=device_index)
@@ -58,7 +65,7 @@ def play_audio(file_path: str, device_index: int = None):
     except Exception as e:
         logger.error(f"Erro durante a reprodução de áudio: {str(e)}")
 
-def record_speech(device_index: int = None, output_path: str = "temp_input.wav", 
+def record_speech(device_index: int = None, output_path: str = "temp_input.wav",
                   threshold: float = 0.015, silence_seconds: float = 1.5, max_seconds: float = 15.0) -> str:
     """
     Grava áudio do microfone selecionado até detectar silêncio.
@@ -72,8 +79,9 @@ def record_speech(device_index: int = None, output_path: str = "temp_input.wav",
         q.put(indata.copy())
 
     logger.info("Aguardando fala... Fale agora.")
-    
+
     try:
+        sd = _sd()
         stream = sd.InputStream(
             samplerate=SAMPLE_RATE,
             channels=CHANNELS,
@@ -89,15 +97,15 @@ def record_speech(device_index: int = None, output_path: str = "temp_input.wav",
     has_spoken = False
     silence_start_time = None
     start_time = time.time()
-    
+
     with stream:
         while True:
             try:
                 data = q.get(timeout=0.1)
                 audio_frames.append(data)
-                
+
                 rms = np.sqrt(np.mean(data ** 2))
-                
+
                 if rms > threshold:
                     if not has_spoken:
                         logger.info("Fala detectada...")
@@ -110,7 +118,7 @@ def record_speech(device_index: int = None, output_path: str = "temp_input.wav",
                         elif time.time() - silence_start_time >= silence_seconds:
                             logger.info("Silêncio detectado após fala. Parando gravação.")
                             break
-                            
+
                 if time.time() - start_time >= max_seconds:
                     logger.info("Tempo máximo de gravação atingido.")
                     break
@@ -121,7 +129,7 @@ def record_speech(device_index: int = None, output_path: str = "temp_input.wav",
         return ""
 
     audio_data = np.concatenate(audio_frames, axis=0)
-    
+
     if not has_spoken:
         logger.info("Nenhuma fala detectada.")
         return ""
@@ -140,17 +148,18 @@ def play_audio_stream(audio_generator, device_index: int = None):
     """
     stream = None
     is_first_chunk = True
-    
+
     try:
+        sd = _sd()
         for chunk in audio_generator:
             if not chunk:
                 continue
-                
+
             if is_first_chunk:
                 if len(chunk) > 44:
                     chunk = chunk[44:]
                 is_first_chunk = False
-            
+
             if stream is None:
                 stream = sd.RawOutputStream(
                     samplerate=SAMPLE_RATE,
@@ -160,9 +169,9 @@ def play_audio_stream(audio_generator, device_index: int = None):
                 )
                 stream.start()
                 logger.info("Iniciando reprodução em tempo real (streaming)...")
-            
+
             stream.write(chunk)
-            
+
     except Exception as e:
         logger.error(f"Erro ao reproduzir áudio em tempo real: {str(e)}")
     finally:

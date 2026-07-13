@@ -3,10 +3,13 @@ import sys
 import time
 import logging
 import struct
+import requests
 from client_adb.config import (
     BLUETOOTH_INPUT_DEVICE_NAME,
     BLUETOOTH_OUTPUT_DEVICE_NAME,
-    RECORDINGS_DIR
+    RECORDINGS_DIR,
+    OLLAMA_BASE_URL,
+    OLLAMA_MODEL
 )
 from client_adb.mimo_client import MimoClient
 from client_adb.audio_bridge import (
@@ -59,24 +62,46 @@ def make_wav_header(pcm_data_len: int, sample_rate: int = 16000, channels: int =
     )
     return header
 
+def call_ollama(messages: list, model: str = OLLAMA_MODEL, timeout: int = 60) -> str:
+    """
+    Chama o LLM local (Ollama) em http://localhost:11434/api/chat.
+    Retorna o texto da resposta ou string vazia em caso de falha.
+    """
+    url = f"{OLLAMA_BASE_URL.rstrip('/')}/api/chat"
+    payload = {
+        "model": model,
+        "messages": messages,
+        "stream": False,
+    }
+    try:
+        resp = requests.post(url, json=payload, timeout=timeout)
+        resp.raise_for_status()
+        data = resp.json()
+        return data.get("message", {}).get("content", "").strip()
+    except Exception as e:
+        logger.error(f"Erro ao chamar Ollama local ({url}): {e}")
+        return ""
+
 def generate_agent_response(user_text: str) -> str:
     """
-    Simula o cérebro da IA (LLM).
-    Pode ser integrado ao OpenClaw, Ollama ou APIs como Gemini/OpenAI.
+    Cérebro da IA: texto transcrito -> LLM local (Ollama) -> resposta.
+    Mantém histórico em voice_history para contexto de conversa.
     """
     global voice_history
-    user_text_lower = user_text.lower()
-    
-    if "olá" in user_text_lower or "oi" in user_text_lower:
-        response = "Olá! Aqui é o assistente virtual PhoneClaw, rodando em modo local via USB. Como posso te ajudar?"
-    elif "como estás" in user_text_lower or "tudo bem" in user_text_lower:
-        response = "Estou operacional no Homelab, controlando o telefone por comandos ADB."
-    elif "tchau" in user_text_lower or "desligar" in user_text_lower or "adeus" in user_text_lower:
-        response = "Entendido. Finalizando a chamada via USB. Até logo!"
-    else:
-        response = f"Identifiquei a frase: '{user_text}'. Sou um agente de voz local controlando este dispositivo."
-        
     voice_history.append({"role": "user", "content": user_text})
+
+    system_prompt = (
+        "Você é A1, assistente pessoal do Rafael. "
+        "Responda em português brasileiro, curto e direto."
+    )
+    messages = [{"role": "system", "content": system_prompt}] + voice_history
+
+    response = call_ollama(messages)
+
+    if not response:
+        # Fallback caso o Ollama não esteja rodando.
+        response = f"Identifiquei a frase: '{user_text}'. (LLM local indisponível)"
+
     voice_history.append({"role": "assistant", "content": response})
     return response
 

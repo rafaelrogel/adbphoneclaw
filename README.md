@@ -1,37 +1,64 @@
 # PhoneClaw ADB-Only Bridge (Sem APK)
 
-Este repositório contém a versão do **PhoneClaw** otimizada para rodar localmente no seu **Homelab**, controlando o celular Android conectado via USB (ADB) sem a necessidade de instalar nenhum aplicativo ou APK no aparelho.
-
-A ponte de áudio da chamada continua utilizando a conexão **Bluetooth HFP** (Hands-Free Profile) pareada entre o celular e o computador do Homelab, garantindo processamento de voz de baixíssima latência e **totalmente gratuito** usando o chip físico do celular.
+Este repositório contém a versão do **PhoneClaw** que roda localmente no **Homelab**, controlando o celular Android conectado via USB (ADB) sem instalar nenhum APK. A ponte de áudio da chamada usa **Bluetooth HFP** pareado entre celular e computador.
 
 ## Estrutura do Repositório
 
-*   `main_adb.py`: Menu CLI interativo e orquestrador do loop de conversa por voz com a IA.
-*   `adb_controller.py`: Módulo responsável pelas chamadas de sistema do ADB para discar, desligar e interagir com o celular.
-*   `mimo_client.py`: Integração com a API de ASR e TTS da Xiaomi MiMo.
-*   `audio_bridge.py`: Captura e reprodução de voz via Bluetooth.
-*   `openclaw_skill_adb.py`: Arquivo de definição de skills/ferramentas pronto para importação no framework **OpenClaw**.
-*   `config.py.example`: Modelo para as configurações da API da Xiaomi e Bluetooth.
+```
+adbphoneclaw/
+├── client_adb/                 # Pacote Python do cliente
+│   ├── __init__.py
+│   ├── config.py               # Config real (lê env XIAOMI_MIMO_API_KEY, OLLAMA_*)
+│   ├── adb_controller.py       # Comandos ADB: discar, desligar, WhatsApp
+│   ├── mimo_client.py          # ASR/TTS da API Xiaomi MiMo
+│   └── audio_bridge.py         # Captura/reprodução via Bluetooth (import lazy do sounddevice)
+├── config.py.example           # Template de configuração
+├── main_adb.py                 # Menu CLI interativo + loop de voz
+├── openclaw_skill_adb.py       # Skills para importar no OpenClaw
+├── test_phoneclaw_adb.py       # Testes (pytest)
+├── conftest.py                 # Stub de áudio p/ rodar testes em ambiente headless
+└── requirements.txt
+```
 
 ## Pré-requisitos
 
-1.  **ADB (Android Debug Bridge)** instalado no computador/homelab e adicionado ao PATH global do sistema.
-2.  **Depuração USB** ativa nas Opções do Desenvolvedor do celular Android conectado por cabo.
-3.  **Bluetooth HFP** pareado entre o celular e o computador (computador configurado como headset de voz).
+1. **ADB** instalado e no PATH (`which adb`). Instale se faltar: `sudo apt-get install android-tools-adb`.
+2. **Depuração USB** ativa no celular.
+3. **Bluetooth HFP** pareado (PC como headset de voz).
+4. **Ollama** local rodando em `http://localhost:11434` (LLM da resposta).
+   - Modelo padrão: `llama3.2:1b` (já disponível). Troque via env `OLLAMA_MODEL`.
 
 ## Como Instalar e Rodar
 
-1.  Clone este repositório.
-2.  Instale as dependências:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Renomeie o arquivo `config.py.example` para `config.py` e adicione sua chave de API da Xiaomi (`XIAOMI_MIMO_API_KEY`).
-4.  Certifique-se de que o dispositivo é detectado via USB:
-    ```bash
-    adb devices
-    ```
-5.  Execute o script principal:
-    ```bash
-    python main_adb.py
-    ```
+```bash
+pip install -r requirements.txt          # sounddevice, soundfile, numpy, requests, pytest
+export XIAOMI_MIMO_API_KEY="sua_chave"   # necessário p/ ASR/TTS da MiMo
+# OLLAMA_BASE_URL / OLLAMA_MODEL são opcionais (defaults locais)
+python main_adb.py
+```
+
+`config.py` (dentro de `client_adb/`) já lê a chave MiMo da env `XIAOMI_MIMO_API_KEY`.
+Se preferir, copie `config.py.example` como base de referência.
+
+## LLM da resposta (generate_agent_response)
+
+Integrado ao **Ollama local** (`http://localhost:11434/api/chat`):
+texto transcrito → LLM → resposta em português. Mantém `voice_history` para contexto.
+System prompt: *"Você é A1, assistente pessoal do Rafael. Responda em português brasileiro, curto e direto."*
+Fallback: se o Ollama não responder, devolve uma mensagem de erro local (sem quebrar o loop).
+
+## Testes
+
+```bash
+python -m pytest test_phoneclaw_adb.py -v
+```
+
+`conftest.py` injeta um stub de `sounddevice` quando não há backend de áudio
+(ambiente headless/CI), permitindo coletar e rodar os testes sem hardware.
+
+## Skills OpenClaw
+
+`openclaw_skill_adb.py` expõe:
+- `phoneclaw_adb_gsm_call(to)`
+- `phoneclaw_adb_whatsapp_chat(to)`
+- `phoneclaw_adb_end_call()`

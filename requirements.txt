@@ -1,5 +1,8 @@
-openai>=1.0.0
+# Runtime dependencies (PhoneClaw ADB-Only)
 sounddevice>=0.4.6
 soundfile>=0.12.1
 numpy>=1.20.0
 requests>=2.31.0
+
+# Dev / test dependency
+pytest>=7.0.0
