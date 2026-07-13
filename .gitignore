@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# PhoneClaw call recordings
+call_records/
+*.wav
+
+# Configuration containing API Keys
+config.py
