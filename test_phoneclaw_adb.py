@@ -43,7 +43,9 @@ def test_transcribe_audio_success(mock_post):
     mock_post.return_value = mock_response
 
     client = MimoClient()
-    with patch("builtins.open", MagicMock()):
+    mock_file = MagicMock()
+    mock_file.read.return_value = b"fake_audio_bytes"
+    with patch("builtins.open", return_value=mock_file):
         result = client.transcribe_audio("fake_file.wav")
 
     assert result == "Teste de transcrição"
