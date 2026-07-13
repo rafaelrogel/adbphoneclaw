@@ -39,7 +39,7 @@ def test_make_gsm_call_success(mock_run):
 def test_transcribe_audio_success(mock_post):
     mock_response = MagicMock()
     mock_response.status_code = 200
-    mock_response.json.return_value = {"text": "Teste de transcrição"}
+    mock_response.json.return_value = {"choices": [{"message": {"content": "Teste de transcrição"}}]}
     mock_post.return_value = mock_response
 
     client = MimoClient()

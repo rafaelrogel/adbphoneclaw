@@ -17,29 +17,50 @@ class MimoClient:
     def transcribe_audio(self, audio_file_path: str) -> str:
         """
         Envia um arquivo de áudio local para a API da Xiaomi MiMo ASR e retorna o texto.
+        Endpoint: /chat/completions com content do tipo input_audio (OpenAI-compatible).
         """
-        url = f"{self.base_url}/audio/transcriptions"
+        url = f"{self.base_url}/chat/completions"
         logger.info(f"Enviando áudio para transcrição (ASR)... Arquivo: {audio_file_path}")
 
         try:
             with open(audio_file_path, 'rb') as audio_file:
-                files = {
-                    'file': ('audio.wav', audio_file, 'audio/wav')
-                }
-                data = {
-                    'model': 'mimo-v2.5-asr'
-                }
-                
-                response = requests.post(url, headers=self.headers, files=files, data=data)
-                
-                if response.status_code == 200:
-                    result = response.json()
-                    transcription = result.get("text", "").strip()
+                audio_b64 = base64.b64encode(audio_file.read()).decode('utf-8')
+
+            payload = {
+                "model": "mimo-v2.5-asr",
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": [
+                            {
+                                "type": "input_audio",
+                                "input_audio": {
+                                    "data": audio_b64,
+                                    "format": "wav"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+
+            headers = self.headers.copy()
+            headers["Content-Type"] = "application/json"
+            response = requests.post(url, headers=headers, json=payload)
+
+            if response.status_code == 200:
+                result = response.json()
+                choices = result.get("choices", [])
+                if choices:
+                    transcription = choices[0].get("message", {}).get("content", "").strip()
                     logger.info(f"Transcrição bem-sucedida: '{transcription}'")
                     return transcription
                 else:
-                    logger.error(f"Erro na transcrição Xiaomi ASR ({response.status_code}): {response.text}")
+                    logger.error("Nenhuma escolha de resposta retornada pela API ASR.")
                     return ""
+            else:
+                logger.error(f"Erro na transcrição Xiaomi ASR ({response.status_code}): {response.text}")
+                return ""
         except Exception as e:
             logger.error(f"Falha de rede ou leitura ao transcrever: {str(e)}")
             return ""
@@ -59,7 +80,7 @@ class MimoClient:
             "model": "mimo-v2.5-tts",
             "messages": [
                 {
-                    "role": "user",
+                    "role": "assistant",
                     "content": content
                 }
             ],
@@ -120,7 +141,7 @@ class MimoClient:
             "model": "mimo-v2.5-tts",
             "messages": [
                 {
-                    "role": "user",
+                    "role": "assistant",
                     "content": content
                 }
             ],
