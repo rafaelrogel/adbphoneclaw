@@ -13,3 +13,4 @@ call_records/
 # Configuration containing API Keys (NEVER commit real config with secrets)
 /config.py
 client_adb/config.py
+*.log
