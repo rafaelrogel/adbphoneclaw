@@ -110,6 +110,14 @@ def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, a
     Loop principal de conversação de voz na chamada telefônica.
     Grava os turnos e salva a ligação inteira localmente no Homelab.
     """
+    # PhoneClaw: transcricao usa MONITOR do sink BT (voz que VEM da chamada),
+    # nao mic local -> elimina eco acustico do fone pro mic.
+    if BLUETOOTH_OUTPUT_DEVICE_NAME:
+        mon_name = BLUETOOTH_OUTPUT_DEVICE_NAME + ".monitor"
+        mon_idx = find_device_index(mon_name, is_input=True)
+        if mon_idx is not None:
+            logger.info(f"Input transcricao -> monitor sink BT idx {mon_idx} (voz do interlocutor)")
+            input_idx = mon_idx
     logger.info("==================================================")
     logger.info("INICIANDO CONVERSAÇÃO DE VOZ (CHAMADA ATIVA VIA USB)")
     logger.info("Fale próximo ao microfone do Bluetooth.")
@@ -120,7 +128,7 @@ def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, a
     pcm_segments = []
     
     # Saudação inicial do agente
-    saudacao = "Alô! Conexão USB e áudio ativos. Como posso ajudar?"
+    saudacao = "Olá, aqui é A1, o assistente do Rafael. Isto é um teste do PhoneClaw, tudo bem?"
     
     tts_chunks = []
     def stream_and_capture_initial(text):
@@ -185,7 +193,10 @@ def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, a
                 yield chunk
                 
         play_audio_stream(stream_and_capture_reply(response_text), output_idx)
-        
+
+        # Pausa pos-TTS: deixa sink esvaziar p/ nao gravar propria voz no prox turno (anti-eco)
+        time.sleep(0.8)
+
         # Armazena o áudio do agente no buffer
         reply_full = b"".join(tts_reply_chunks)
         if reply_full.startswith(b"RIFF") and len(reply_full) > 44:
