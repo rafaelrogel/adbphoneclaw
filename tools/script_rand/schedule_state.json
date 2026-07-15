@@ -1,0 +1,2006 @@
+{
+  "media": {
+    "galeria_0001_estilo1.png": {
+      "id": "ac692a78-b90f-4d26-b2b5-2aa05a655ca7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8e1071095f8e63ebc8a6ba510e00aceabe4.png"
+    },
+    "galeria_0002_estilo2.png": {
+      "id": "f9e03a43-9959-4104-8696-8905d9a13032",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bc8b70bb39eca1d37ee91d84e6bcd861.png"
+    },
+    "galeria_0003_estilo3.png": {
+      "id": "86afa1a0-f8fb-4432-93d2-634409ed99a0",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/42f198fc0a961014ee306bdf9fc2e10724.png"
+    },
+    "galeria_0004_estilo1.png": {
+      "id": "b8c2501b-e489-4672-b6f5-c1ea8d925061",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eeaceedca342b103fc2cee2e11073c9528.png"
+    },
+    "galeria_0005_estilo2.png": {
+      "id": "e8394619-e6ec-4a7a-bd02-af5b7c1976fe",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8f01c0bfba7010a9c2cc7f16d6c081cd10.png"
+    },
+    "galeria_0006_estilo3.png": {
+      "id": "5607695e-2504-4ada-be50-4d156978fdef",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ea5245551d25ca02a0ffc1a2d507e82a.png"
+    },
+    "galeria_0007_estilo1.png": {
+      "id": "bb0b9488-e918-47d6-a10b-0a404f2b71d0",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e1da93cd79c2a8f71d8b9337d410a4ba6.png"
+    },
+    "galeria_0008_estilo2.png": {
+      "id": "9fdfdaa6-1b67-4e85-9f70-9954cff57eb5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4f1f92cb1ad1b68ac93e9a4da8fbcb45.png"
+    },
+    "galeria_0009_estilo3.png": {
+      "id": "7e78ce47-c183-488f-9c0a-38453ab5526b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/66a64dbffc5bb7d73caae85106feedec7.png"
+    },
+    "galeria_0010_estilo1.png": {
+      "id": "42d36d61-8341-411d-a7fe-e157ff715b87",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b9236b24ba1e72c474c710acb52996f6c.png"
+    },
+    "galeria_0011_estilo2.png": {
+      "id": "558109ac-23dc-4d63-bd74-afa43f1950f5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d6110d27bf0a188178c96d91cda9947b6.png"
+    },
+    "galeria_0012_estilo3.png": {
+      "id": "e4bae7c3-0c0e-4be5-8526-4c7168a9a08c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f22f736114bce76db3191b01036d0841010.png"
+    },
+    "galeria_0013_estilo1.png": {
+      "id": "2ad137ae-f9ae-4ec7-8a01-dcd7af99807c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4104e4acc863b7235bfac6b9aa1023eb5a.png"
+    },
+    "galeria_0014_estilo2.png": {
+      "id": "c3e2fbcb-99ad-4865-84f4-1d20bbf1394f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/73c516f66a911c3148c14f108582109d1d.png"
+    },
+    "galeria_0015_estilo3.png": {
+      "id": "97005923-3062-4c74-a03a-bc67d7adcfc4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f9a410015772b1fc5a97458f2c910945f.png"
+    },
+    "galeria_0016_estilo1.png": {
+      "id": "d2372417-2fdb-4357-831f-32e481be55ae",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d10997e60fb867c5374636779ba03ecd8.png"
+    },
+    "galeria_0017_estilo2.png": {
+      "id": "0569006e-c151-4d68-a8d7-b82e5c7a67cd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6db6a3874708c0e8b4c1c3c46528a649.png"
+    },
+    "galeria_0018_estilo3.png": {
+      "id": "720baac7-5f35-4535-8262-989dacdcea8d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3aaef329d06ed69a5e5b21e66d3394b2.png"
+    },
+    "galeria_0019_estilo1.png": {
+      "id": "2cb24825-374f-47f6-a7cc-d4604633d6dd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c88682a6a2e81088b287a6ce4e411411a.png"
+    },
+    "galeria_0020_estilo2.png": {
+      "id": "284c0891-4293-4f99-9020-383c819502e9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/52112d59eadf0545cf93512a68a0f9c3.png"
+    },
+    "galeria_0021_estilo3.png": {
+      "id": "a117c9b0-3d3d-4a83-b1a8-391c8eade3ee",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6b5faeb6eb01802707f8dfac9a725af10.png"
+    },
+    "galeria_0022_estilo1.png": {
+      "id": "200d7550-8e48-4713-9625-e4c30283c820",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5c4f253ad6b81276abd23c6e27efb769.png"
+    },
+    "galeria_0023_estilo2.png": {
+      "id": "8f568083-28a7-48c0-96de-255bd345a86a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2182fe10c322222ffb854dd89594248c10.png"
+    },
+    "galeria_0024_estilo3.png": {
+      "id": "167650cb-f0dc-4bf5-9456-eee9a5064e4d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/de23b48c4a630f48db88301710b2310a25.png"
+    },
+    "galeria_0025_estilo1.png": {
+      "id": "67a70c4f-9955-4f7f-b76a-7a1934ab946d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/11c735159453ce1c10e1e9962f33980d2.png"
+    },
+    "galeria_0026_estilo2.png": {
+      "id": "c035d67b-7a61-48fb-8341-6600083cf0fa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/210bcf7be710a7b38e63c110f4c971b3824.png"
+    },
+    "galeria_0027_estilo3.png": {
+      "id": "cf55d1b8-3637-446d-a4a2-280d117a0193",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/44549a8aee0699d48ee824a3a94e7104c.png"
+    },
+    "galeria_0028_estilo1.png": {
+      "id": "57133505-1113-4c91-b31b-8ce5f3445ff9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e328738cebe9ab5c224aec97c4ced6bc.png"
+    },
+    "galeria_0029_estilo2.png": {
+      "id": "096bee42-83b5-4c81-91d5-4b1b92810498",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f3edd987a0372f853c44eb13435c1b84.png"
+    },
+    "galeria_0030_estilo3.png": {
+      "id": "94d3defa-9e12-4465-a84a-375b790f2799",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/265ead366d15cb6b628b6bdc5f59cf77.png"
+    },
+    "galeria_0031_estilo1.png": {
+      "id": "c3cd7b2a-96cc-4423-86d2-21962592fb8a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8c1efc2e89c21d3f6431b457791101901.png"
+    },
+    "galeria_0032_estilo2.png": {
+      "id": "e1e43172-1438-4d4e-a309-3378aa5686ad",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bd91b5d9f74096aca91410b5d6cc752d5.png"
+    },
+    "galeria_0033_estilo3.png": {
+      "id": "8a141abc-1650-4f22-bf7b-747bce4f15c1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/48aa108ae79c3ce0d1d4c8a5fd6c113ac.png"
+    },
+    "galeria_0034_estilo1.png": {
+      "id": "da49c861-9ef9-44df-aee0-a48448e9ef8e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bc955b5b18e93648c751fbd574f834107.png"
+    },
+    "galeria_0035_estilo2.png": {
+      "id": "cc78d953-9f86-4c70-8279-1ca3539ca5e2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4439d43198b7b2d2f3fc385ee2d8e90b.png"
+    },
+    "galeria_0036_estilo3.png": {
+      "id": "5a742fb4-f638-4637-ba67-0001233ef113",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6e1110a47693290102726c69b16d421998.png"
+    },
+    "galeria_0037_estilo1.png": {
+      "id": "30648d5f-ef1f-4139-8513-b2c3f21bd1c2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/410ec10557d93687d13d5c7da6a2f0660d.png"
+    },
+    "galeria_0038_estilo2.png": {
+      "id": "a260c06c-840c-467f-8aaa-90eb386952ef",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7b636891ac6a4c49d0561b2d1e5e765a.png"
+    },
+    "galeria_0039_estilo3.png": {
+      "id": "6c20e8dd-fdc7-4dc1-9624-348d192dd75f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e8acba57acd4c599ae10e98155cee7cbd.png"
+    },
+    "galeria_0040_estilo1.png": {
+      "id": "d2899e31-e295-4781-b789-fcb5ff839f81",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/73644411046f532aa530f6ac2be5c1f5d.png"
+    },
+    "galeria_0041_estilo2.png": {
+      "id": "81d73f9c-8470-4536-a69b-1035dcd9f8aa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8b4af74b37f13ae3779b04110a5bc31f2.png"
+    },
+    "galeria_0042_estilo3.png": {
+      "id": "c452d1fc-bad1-49ba-80f3-9730b63d4b30",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1832d2c2b10d2af94c2518ba05ea517fd.png"
+    },
+    "galeria_0043_estilo1.png": {
+      "id": "3bdb2f85-f575-4b82-a4d8-e1ba78e9c750",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a05a5486e2d6d34c8f55301ef77686a1.png"
+    },
+    "galeria_0044_estilo2.png": {
+      "id": "8b561818-f53d-43fd-8227-d26982bfadb2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/834a1b10f3ccfdf51c43f83b96716c523.png"
+    },
+    "galeria_0045_estilo3.png": {
+      "id": "6938f1f2-3aa3-4997-bb42-b4f567e5fa07",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/34d3910104e525af94f79baab6e5fef375.png"
+    },
+    "galeria_0046_estilo1.png": {
+      "id": "1b5932e4-fd0a-4710-836d-356c5220fa6e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9fb210267a3b82d798ebea2710561e3bb1.png"
+    },
+    "galeria_0047_estilo2.png": {
+      "id": "cda6030d-9904-4757-8f0d-dcea7e015012",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2a7b1b21f78dab101284ba109dbf1b1eca.png"
+    },
+    "galeria_0048_estilo3.png": {
+      "id": "1ec71f30-17be-4073-b2eb-fbe80b6382ca",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/15d818e824c109f264ade3eb1be0f13bd.png"
+    },
+    "galeria_0049_estilo1.png": {
+      "id": "0961b845-93d0-4906-aaa0-b40966fd9c56",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eb10db2b299b7c2d5de2edb241e96d58d.png"
+    },
+    "galeria_0050_estilo2.png": {
+      "id": "6b7594d9-cb3e-4aee-9fc9-e9aadaaa9857",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cbba719d837d6849b73a166061f81abb.png"
+    },
+    "galeria_0051_estilo3.png": {
+      "id": "1689745d-af00-4f1d-bb70-90cb73813e7f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/373f99e2651d62a5931d9b9e4fcb10b48.png"
+    },
+    "galeria_0052_estilo1.png": {
+      "id": "2a466b52-e02f-4433-b05b-f721bfedee43",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c9876547173c377b106c1bde89e4966c1.png"
+    },
+    "galeria_0053_estilo2.png": {
+      "id": "3175f85c-ef98-42a7-967d-9f49480b788a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a758ffba307f621c80771211aa500094.png"
+    },
+    "galeria_0054_estilo3.png": {
+      "id": "04e3c16e-be92-4822-b1ab-cf88e6fc5128",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/edba63106a9c574669aa276346d91069fc.png"
+    },
+    "galeria_0055_estilo1.png": {
+      "id": "35badcf8-4cd0-4d31-8ada-9681605783e4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8ebf0749ba37cfa146b7dd8327cfce22.png"
+    },
+    "galeria_0056_estilo2.png": {
+      "id": "e307b14b-54f9-468a-88a8-7fdf514a459f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/46101410fbb7247d4dffd4819bb6feaa86.png"
+    },
+    "galeria_0057_estilo3.png": {
+      "id": "c76a4c2d-2a8d-485e-8830-24afbd2f912b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5424507be9a75bb48d8cc8b2ed9f102c8.png"
+    },
+    "galeria_0058_estilo1.png": {
+      "id": "4e29e88b-24de-43a0-94c6-ecc3c742a8e6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/96d012ee5b2bfc75f0c3aaf876107d8b.png"
+    },
+    "galeria_0059_estilo2.png": {
+      "id": "80d9d671-17d1-4c36-a72b-9dff4f9efe85",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6bbf775a94e5b05e13781ec70f2391b7.png"
+    },
+    "galeria_0060_estilo3.png": {
+      "id": "e04c7e9f-817e-40de-a79a-f00a21970827",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/910100f5c46584d46fc19fd73a55440fd8.png"
+    },
+    "galeria_0061_estilo1.png": {
+      "id": "3ab0afad-47d7-4c73-9122-724df88d24a4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e2833573678f912836ae8940c24d9bae.png"
+    },
+    "galeria_0062_estilo2.png": {
+      "id": "3ed55d8b-9ed5-4791-8e2a-6f6f82c23dd5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/dbb79a845c54338a4ce1fdf9ef830aff.png"
+    },
+    "galeria_0063_estilo3.png": {
+      "id": "5bca39d4-f4ec-466b-b321-588cd5eec0e6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/225cf706056610d55b0d6257141311013.png"
+    },
+    "galeria_0064_estilo1.png": {
+      "id": "52da2381-f65f-4f73-92b1-92239f0b32c5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a6849bc1081008172681b3f815c32811e3.png"
+    },
+    "galeria_0065_estilo2.png": {
+      "id": "2ad7267a-24dd-48ec-8b17-b5a3ff48a417",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/baaa052b1cf970196e08a7fcab6edae1.png"
+    },
+    "galeria_0066_estilo3.png": {
+      "id": "14bc8014-65cf-4999-b097-6a42ad4f2695",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/311129d67da6cbfc2b155e7170e31861.png"
+    },
+    "galeria_0067_estilo1.png": {
+      "id": "c0e2dc5d-dbfc-4b35-ba70-7b7e644ef121",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/877fae11621199ff57a51e0429bd833a.png"
+    },
+    "galeria_0068_estilo2.png": {
+      "id": "68ecf43d-ffb0-42e5-8a31-148663d2436a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2a3cc1051042c768cb1148584ac4410644d.png"
+    },
+    "galeria_0069_estilo3.png": {
+      "id": "634ecc86-52b3-4943-8271-e27dd65b3584",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eb95e18c5110dfe8ca3b8d69a9951df17.png"
+    },
+    "galeria_0070_estilo1.png": {
+      "id": "01690f87-29b7-4e94-b146-9f34399a7a83",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/74c5c421fd168a409521303bb06d7f15.png"
+    },
+    "galeria_0071_estilo2.png": {
+      "id": "ef9a813e-8426-4336-9ce2-efcabf85b4ea",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f40d3408096f1d1bf810c5a56ccd6c9c7.png"
+    },
+    "galeria_0072_estilo3.png": {
+      "id": "67b2f0a9-6278-412e-94fc-08aed6b87239",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/0f2305d5be41c57f2104c4fd3d585e14c.png"
+    },
+    "galeria_0073_estilo1.png": {
+      "id": "95bbe9a9-924d-4d75-bd6b-51594b070f92",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2ceb2108eba266ca939fadd7ecdbd1d7c.png"
+    },
+    "galeria_0074_estilo2.png": {
+      "id": "ca7ed949-6c68-4960-943a-5eb05804f2e3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b9de415543de3653027ddf8e44636c45.png"
+    },
+    "galeria_0075_estilo3.png": {
+      "id": "57779702-9165-42ff-883f-5148c959bd05",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c8843474be6b25b10b55aba2e6988feda.png"
+    },
+    "galeria_0076_estilo1.png": {
+      "id": "6c7d5e20-8afb-489d-b6cc-9089f62f2fb8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/69a145e4f861c33d942fb639101c10d9ff.png"
+    },
+    "galeria_0077_estilo2.png": {
+      "id": "6ca41b8b-e891-4abf-8e7d-d60f54379763",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ade2c066a03876a922e21aab251b21049.png"
+    },
+    "galeria_0078_estilo3.png": {
+      "id": "363c6b9b-f011-41dd-b42c-2279dd6d72f6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/27841d289bdef9fb8b2960591ae714e5.png"
+    },
+    "galeria_0079_estilo1.png": {
+      "id": "16fcf0ec-4445-4bfb-82fb-908bbec858cf",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/94cee0b10a1c7f087ff1338829863e14b.png"
+    },
+    "galeria_0080_estilo2.png": {
+      "id": "3f974f08-951f-45d1-86cd-391b2de41f42",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c4389f16632f35c21b8f5b8a7b632d19.png"
+    },
+    "galeria_0081_estilo3.png": {
+      "id": "17ecb5b8-05f4-4c01-b222-f18b3bfaad1e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ee23dbd59f580285f4d92e6744569634.png"
+    },
+    "galeria_0082_estilo1.png": {
+      "id": "b11ba801-be7b-4da6-82d0-f63df76958ff",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6833d4db16f4d2921010100d107ba35fc35.png"
+    },
+    "galeria_0083_estilo2.png": {
+      "id": "3b283b69-a9d5-456a-9bfd-0098df25bf4a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/110665da1689b7524ddcff0c6581038dc0.png"
+    },
+    "galeria_0084_estilo3.png": {
+      "id": "885b8e77-47c2-4878-b2f0-d5d53c273780",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7d46fca498c324bbf546f2dccd192edc.png"
+    },
+    "galeria_0085_estilo1.png": {
+      "id": "3fe32a93-a274-4aac-a922-e9b13112b0e8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c53019db643118bf104c60adc908fb321.png"
+    },
+    "galeria_0086_estilo2.png": {
+      "id": "fa4aeb5b-446c-4f2e-a5bb-63963b28607a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f9728e2c57574b8d7810310a7109f910f92f.png"
+    },
+    "galeria_0087_estilo3.png": {
+      "id": "b3c5d173-2903-4bd7-a393-5906e810c163",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3e210e8d39210fa1bf2591483a7ad48f96.png"
+    },
+    "galeria_0088_estilo1.png": {
+      "id": "f1f44df9-7860-4aec-89e3-ab2c9806af3c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5731f576b4bf1afa87d4abecdce1510e7.png"
+    },
+    "galeria_0089_estilo2.png": {
+      "id": "ad1f840d-67d6-47a0-958b-d89b325ad205",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a10e6b9ed6681cd4774c14f36e4be91068.png"
+    },
+    "galeria_0090_estilo3.png": {
+      "id": "223a3aa4-00ee-440d-8ef7-97ab8388a512",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2cc10a1bbf1f3ecd106fe64e10790dc27b8.png"
+    },
+    "galeria_0091_estilo1.png": {
+      "id": "97dab80f-370a-43b8-a207-b533a4a944f3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4a72b9f77e3217912d6efd99b62560e7.png"
+    },
+    "galeria_0092_estilo2.png": {
+      "id": "b4edc81f-1a52-4310-88fe-bf211650f4d3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d2ac8bbbe404d71b486fd7e43712bcc8.png"
+    },
+    "galeria_0093_estilo3.png": {
+      "id": "a1460411-2c87-4614-968b-df8196e9b5eb",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/69096278be2e8faf76bb466371e246fd.png"
+    },
+    "galeria_0094_estilo1.png": {
+      "id": "1ca91a85-54ff-44f0-b93a-79c2312b1a71",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/be10cdd468fc89ecee16696d42a5705100.png"
+    },
+    "galeria_0095_estilo2.png": {
+      "id": "a7ca8bd1-3d9a-426a-aec8-4f9f0f2e1be3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e21611ccb116a6310638aedc569c27eaa.png"
+    },
+    "galeria_0096_estilo3.png": {
+      "id": "06423778-de91-4100-b829-5ef4bf2af7a9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8bf9101024103468ed5e89b4e87690453c5.png"
+    },
+    "galeria_0097_estilo1.png": {
+      "id": "9ee410ee-9b45-41b9-b893-624a9a3fd2d9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f1526770d69e862eec9c38bd21b263f8.png"
+    },
+    "galeria_0098_estilo2.png": {
+      "id": "971ebfab-cd9e-477d-ac45-17d307a0a6ee",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6cdff8fd10328a99f1ac6ddc4fff8c4c4.png"
+    },
+    "galeria_0099_estilo3.png": {
+      "id": "2d6fd7e2-285e-42f7-9341-d066578999e7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/668f07a5a4cc385a19af5225819709eb.png"
+    },
+    "galeria_0100_estilo1.png": {
+      "id": "3b04b36c-7667-42cc-b13c-c5e067000f6c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/965676ca9ac18f80fd3762e81a7310cc.png"
+    },
+    "galeria_0101_estilo2.png": {
+      "id": "eea879db-b243-4fca-9827-d7831761e246",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8ddae904cc6f218aa23d95dc99d324107.png"
+    },
+    "galeria_0102_estilo3.png": {
+      "id": "8c2aef62-a695-4260-968c-59f261ab4134",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b744a589bfb35bb37416d2f65195a8c8.png"
+    },
+    "galeria_0103_estilo1.png": {
+      "id": "98db5bdb-f8ee-4454-b884-c60eb7b3de9a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b2e8687a418ef6ee10d83ca96287c80ab.png"
+    },
+    "galeria_0104_estilo2.png": {
+      "id": "27b86c4d-dc6d-454b-8522-2c1cd3a15184",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c1f26085337a107bb710f8413ad139fbdf.png"
+    },
+    "galeria_0105_estilo3.png": {
+      "id": "968da984-d397-42ed-bdab-0457eee7182a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/301c35ee4475198e740a10f2bb00841055.png"
+    },
+    "galeria_0106_estilo1.png": {
+      "id": "9f3c0932-7826-49a9-a781-1e20ac1db372",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6935b16214cb3a2e966d10863649841ce.png"
+    },
+    "galeria_0107_estilo2.png": {
+      "id": "b4ae72cf-aace-497e-b6e1-27af2f73e49c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8f3c10a31072162db0effac7847437cb03.png"
+    },
+    "galeria_0108_estilo3.png": {
+      "id": "0af19dad-9f0e-4723-bbfc-4d9e76a0dae8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b3387aff4bfc9e7a42b6f910bc7e047f8.png"
+    },
+    "galeria_0109_estilo1.png": {
+      "id": "80d8302c-ea6e-4317-8ded-36bcf3db0afb",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5f58410f7f705c4c686668f95d9107653a.png"
+    },
+    "galeria_0110_estilo2.png": {
+      "id": "ad34dced-7de3-4aa5-b355-e8eaf1791ccc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b3b72e26f108b1eb176097690b49870f9.png"
+    },
+    "galeria_0111_estilo3.png": {
+      "id": "d311cff0-16e5-4af8-ade9-b32671b268a8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ac3fb4bf30cd1e08410abb5f7f4ae73ec.png"
+    },
+    "galeria_0112_estilo1.png": {
+      "id": "a7c2eafd-6039-4273-9fd5-e3b4960bb16d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6a08e0a958b641ae10334101021210155310.png"
+    },
+    "galeria_0113_estilo2.png": {
+      "id": "d52a9e71-43fb-400d-b441-a1921d39dfba",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/72510355f34349aba0bdcd97bd1034fc3b.png"
+    },
+    "galeria_0114_estilo3.png": {
+      "id": "1c593cbd-5d92-452a-8d61-d4e16f3adb1b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6e6b9584b29ac4cf8223410cd9556319.png"
+    },
+    "galeria_0115_estilo1.png": {
+      "id": "576070a8-dd6e-4f18-b624-4c732446ac8e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/821dcd66b70c30a721c26458e8a910f33.png"
+    },
+    "galeria_0116_estilo2.png": {
+      "id": "b5d92b77-0883-45a8-87c0-fbc0fb523ab3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bc10e5a3156a7b95d592a6416210ff95bf.png"
+    },
+    "galeria_0117_estilo3.png": {
+      "id": "7c86c03a-3cff-4284-9689-0a6de187ac68",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/43c8a4eefd15c8a010d52d8f3432ebbcd.png"
+    },
+    "galeria_0118_estilo1.png": {
+      "id": "a6e378d8-23c2-469a-b383-fa61bde040e1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a7103ce8c43a8a42d518e34d458300af8.png"
+    },
+    "galeria_0119_estilo2.png": {
+      "id": "180c746c-98aa-425f-a252-784b0149b064",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5ebfcd8fe8b6757ed725dcb9271f2284.png"
+    },
+    "galeria_0120_estilo3.png": {
+      "id": "e31fa12b-c949-479f-80d6-fc23e514adc8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ca7945e2c9f9f55f8b96d474064968c6.png"
+    },
+    "galeria_0121_estilo1.png": {
+      "id": "8ce8d80a-207e-471b-a1fc-c8125ba69daf",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/df69b5e25467c35c1e0521ec96d7161d.png"
+    },
+    "galeria_0122_estilo2.png": {
+      "id": "465e0ae5-79c6-4868-b255-1c9d283aaccc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e6ac764b3b575492210b5d1fea3411ad4.png"
+    },
+    "galeria_0123_estilo3.png": {
+      "id": "32e10677-8dfa-41b5-b497-90e8a1272ecc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3fe98b3e6104d1e3fbeaecf101235810e7d.png"
+    },
+    "galeria_0124_estilo1.png": {
+      "id": "809012f5-d7c5-4de7-b706-ef567ac3f96b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/60b9531dafe9faef7bf172c74a32ebc10.png"
+    },
+    "galeria_0125_estilo2.png": {
+      "id": "72516038-5ad0-4aa2-a736-eeca1738c78f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ba8935ee10aea6dbdf59109f4d7cb70e7d.png"
+    },
+    "galeria_0126_estilo3.png": {
+      "id": "a808a3b3-f819-4e2b-aa7f-6a92f7cda01f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7f436e684fbeae269443cf4e8173d999.png"
+    },
+    "galeria_0127_estilo1.png": {
+      "id": "545c7613-9365-43c0-a223-0ae9ad370fb5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/204c5594d4c79136a57c0a5db2e5641b.png"
+    },
+    "galeria_0128_estilo2.png": {
+      "id": "2c562eb4-3313-41c3-a5e4-a2b9bf872928",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1074b1e73a746d6724975564db89109d91.png"
+    },
+    "galeria_0129_estilo3.png": {
+      "id": "5249ff60-7fb6-44c9-9a80-af18971a9720",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/fa18176e35dc2dcc7b18b5b31f455cf4.png"
+    },
+    "galeria_0130_estilo1.png": {
+      "id": "fa319f67-724c-43af-b8a6-eda8517babfd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3a1f1fe8dbd88af787e8d97ae9bfba97.png"
+    },
+    "galeria_0131_estilo2.png": {
+      "id": "67b62394-bb53-41ca-8c1c-cfad04994116",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/351ab10307cadde3e51817dbc102698ed9.png"
+    },
+    "galeria_0132_estilo3.png": {
+      "id": "d7f88165-9766-46c0-95d9-783f8dc5a12f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d51434d21adcc5c5be2e306e2537a12c.png"
+    },
+    "galeria_0133_estilo1.png": {
+      "id": "f08551b4-c753-4bcd-810d-679a6eda4d01",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/dd042367896541b5ded48702718c364f.png"
+    },
+    "galeria_0134_estilo2.png": {
+      "id": "34edabd2-e0ef-494e-8722-2aaa64b1ae23",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/42fc314b859d3857f2eca23ff2f81511.png"
+    },
+    "galeria_0135_estilo3.png": {
+      "id": "e59df827-1c4c-4353-ac32-0703fc7b7df9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/410788fe845794437e3677241ca25fdc6.png"
+    },
+    "galeria_0136_estilo1.png": {
+      "id": "b8dd587a-7eb8-4657-a2f7-debaf782c8b8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d1063a70df4f5107cd38937f296d5ca544.png"
+    },
+    "galeria_0137_estilo2.png": {
+      "id": "6bc39d4f-ef99-4b38-9e09-d8a972eec44f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c8fba6bdd9f31005dd7101a229d1e8a98d.png"
+    },
+    "galeria_0138_estilo3.png": {
+      "id": "c34b2793-2f03-479d-b4ab-df5ff72cf587",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e27463e723d469bd51810ef87b12dc260.png"
+    },
+    "galeria_0139_estilo1.png": {
+      "id": "20fd4bca-4671-403d-b6ba-01fcb52dfde1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/25148a71036e947656c1b4708031080b1.png"
+    },
+    "galeria_0140_estilo2.png": {
+      "id": "f94028fa-c833-485c-b5dd-26fe2a3d2392",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/94aec22755a579ab765c104332810955101.png"
+    },
+    "galeria_0141_estilo3.png": {
+      "id": "b9ac6c29-4ed3-44e4-8e6f-77ed82e2ced4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/fdb585b633412a152fe957d0466810f9.png"
+    },
+    "galeria_0142_estilo1.png": {
+      "id": "5ef1fc1f-d7ee-4dd7-820e-755ba38d79a9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/25b1721105def854a9f4510739488e5f2b.png"
+    },
+    "galeria_0143_estilo2.png": {
+      "id": "1e76760e-9c77-4f3f-8da4-dd2b9ce42957",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7aa639fc7cc31f504f21f9789a8104d7f.png"
+    },
+    "galeria_0144_estilo3.png": {
+      "id": "16336e90-6acb-4186-b6b1-4451de49d60a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ca0f5bb30462f3cbe8f5ba6dbda1c9e3.png"
+    },
+    "galeria_0145_estilo1.png": {
+      "id": "bb0709b1-dd55-4fce-8c36-75e5c974ccd6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b10dca9f14bc797fc6ddd5f6cc2ccf936.png"
+    },
+    "galeria_0146_estilo2.png": {
+      "id": "7ab4ac54-9c8f-4ea9-9a99-d229b2869773",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e0854f6fd4e2b717220648653777d3cb.png"
+    },
+    "galeria_0147_estilo3.png": {
+      "id": "23f5f190-fe23-48c0-ac89-df155e5d72d6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/376e22939810710911095e9e2cfee088310.png"
+    },
+    "galeria_0148_estilo1.png": {
+      "id": "1bf34be8-734c-40ff-948e-fddc8ca1ec70",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/64ffc4d29213236fb7d744eb55f02cbe.png"
+    },
+    "galeria_0149_estilo2.png": {
+      "id": "4c817987-0f53-4aae-b613-527a5a232ff6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/fb10aa73ace733f28f146d67024eb1756.png"
+    },
+    "galeria_0150_estilo3.png": {
+      "id": "f2ef12cf-7ef5-47ea-9e94-fbd8a7ef1542",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3a83c38af1ace3f2dd21e7923dd310837.png"
+    },
+    "galeria_0151_estilo1.png": {
+      "id": "7336e6a2-326b-4396-869e-44e858f58a9c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/72d83458810625a785b918fa2810ee3f98.png"
+    },
+    "galeria_0152_estilo2.png": {
+      "id": "54e1a20a-3560-4f60-a549-fe4dc087121b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9095ccf2ae74fa9af45f67f6bde6b2ce.png"
+    },
+    "galeria_0153_estilo3.png": {
+      "id": "82e700e4-2843-416a-bb08-132a9440e48b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8d43207c72211d8a6cae3ea2d2cb58b6.png"
+    },
+    "galeria_0154_estilo1.png": {
+      "id": "206deae5-f5ed-48a7-99c7-bfb7a4771123",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/14cf53ef2bb1eb0c5430d18eca11ca69.png"
+    },
+    "galeria_0155_estilo2.png": {
+      "id": "a012331e-e155-4d22-8577-7471ce7c5b1e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/55473761034c2150538c825dbe108bdff4.png"
+    },
+    "galeria_0156_estilo3.png": {
+      "id": "c3a5c566-18af-45e5-959b-2b86c931d529",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5e6b92510e810786dd6454116cbaa5d19c.png"
+    },
+    "galeria_0157_estilo1.png": {
+      "id": "814c3a10-f32e-4978-9a5a-837342501f97",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c7103c66b957e1899e5f79f30efce36c6.png"
+    },
+    "galeria_0158_estilo2.png": {
+      "id": "b2431ed8-1137-418e-8ada-05f3eb4d1e76",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b62b49253d1041c37c74cfb7486d28b5f.png"
+    },
+    "galeria_0159_estilo3.png": {
+      "id": "01ac8ea1-bff3-4c6b-87a0-97f2394e457c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bf8ddef1036dd244242222d9f2c4dde75.png"
+    },
+    "galeria_0160_estilo1.png": {
+      "id": "52795d2a-234a-48d1-a768-ba4fc5096497",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b769befb343a885c8d169f2bea21d8ee.png"
+    },
+    "galeria_0161_estilo2.png": {
+      "id": "678113b9-5ab6-4fae-ad52-d65ab3ea2784",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d3be94a45f16df64e6d7d66f3d144d62.png"
+    },
+    "galeria_0162_estilo3.png": {
+      "id": "d99c0fa2-cc69-4a5f-a837-0ef5930c132b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/51283f2161cd2b788bdaaae7c10af8448.png"
+    },
+    "galeria_0163_estilo1.png": {
+      "id": "66ec7dd4-3867-4685-a60b-7e4d88678c03",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/0310d0e96d169e7e95f10eed719fd2c7fc.png"
+    },
+    "galeria_0164_estilo2.png": {
+      "id": "835ce42e-9ea6-4db3-8d55-694483c08bf1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3b6275681e104d90c756fd5b75f2ddd12.png"
+    },
+    "galeria_0165_estilo3.png": {
+      "id": "e1498346-5edb-44d8-b18c-e39dbb484f83",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4710aa2d1cdf0b01f101ea8ebfaf78a410c.png"
+    },
+    "galeria_0166_estilo1.png": {
+      "id": "b06de9ac-7510-4348-a550-a28144ab1466",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ed95d3491fbf10214dc3a7e1baf5d810dd.png"
+    },
+    "galeria_0167_estilo2.png": {
+      "id": "18ae7ff0-5b51-424c-9623-ca5b84388359",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3ec7d328b279692935a2239100b2ba759.png"
+    },
+    "galeria_0168_estilo3.png": {
+      "id": "cf500d30-37cc-4a7a-a64a-c01bc834dd64",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/538982a12ab6c81cfc347822b88b4ad9.png"
+    },
+    "galeria_0169_estilo1.png": {
+      "id": "a2ba0c8a-37ba-4f11-9a70-1815902fac36",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/75102c2dd72ba62f1093d756fc9b6c0949.png"
+    },
+    "galeria_0170_estilo2.png": {
+      "id": "b7cce27c-3cba-41d9-a59b-0e81956291aa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/716665a2416c2e18787b20a2ea2d7c5d.png"
+    },
+    "galeria_0171_estilo3.png": {
+      "id": "aa32ccc7-5ff6-44fd-a10e-639337d96d17",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/bb228dc4126174a44321a518bf9af7c4.png"
+    },
+    "galeria_0172_estilo1.png": {
+      "id": "0a7d1316-567a-40d2-a7cb-b8b9b498ccb9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7e45b6eca9b89b990d5ca85c9c08d3ed.png"
+    },
+    "galeria_0173_estilo2.png": {
+      "id": "af09dd27-0643-45b3-960f-58009c4f11b8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/fe4e6f9f04e8af7883d6fdd4492bef1c.png"
+    },
+    "galeria_0174_estilo3.png": {
+      "id": "a96c31a0-bc97-4e97-b833-13991e080b35",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b5e488107900b87d9fe2f5a670d777ae2.png"
+    },
+    "galeria_0175_estilo1.png": {
+      "id": "89d8b366-616d-4ad2-8dcf-7194c3e921f7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/76df4e8260246b53245fdf5a9992aca9.png"
+    },
+    "galeria_0176_estilo2.png": {
+      "id": "ef952c0f-61db-4efb-a7da-be47bb63702a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f8ea0a159fd795d3931013d029d5026cd.png"
+    },
+    "galeria_0177_estilo3.png": {
+      "id": "f677188c-1691-4680-ab1c-300b50397922",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1710dde7bff23285157b810a510cde665db.png"
+    },
+    "galeria_0178_estilo1.png": {
+      "id": "cf78fb0a-5881-4ba9-81c0-3c97b503bab1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/fb1a95e464b11022fdb9e3e367153f493.png"
+    },
+    "galeria_0179_estilo2.png": {
+      "id": "28dc9acc-3b36-429c-bf89-9e969108e613",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f2118dcfc92eef1002323994cb14c15e3.png"
+    },
+    "galeria_0180_estilo3.png": {
+      "id": "8a48f042-0071-4d3e-b4e5-4c8327a18f24",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cb10127fc104f862101888a6d4c1526a368.png"
+    },
+    "galeria_0181_estilo1.png": {
+      "id": "758e93f7-21e0-4270-bf97-c4413c30726c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/33f96ec669a2076ccc580e3725264a63.png"
+    },
+    "galeria_0182_estilo2.png": {
+      "id": "06ba7aa2-9d3a-4a0a-95e1-7aa85bc46a3c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/dc21818ec035102d8d04f8658edc8cef8.png"
+    },
+    "galeria_0183_estilo3.png": {
+      "id": "29f9f772-69fc-4c7e-a27b-98e31eea17c0",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/aca73dbe9f3d9aeac34372c9b28a9302.png"
+    },
+    "galeria_0184_estilo1.png": {
+      "id": "8c214a1f-d4e4-4184-a72e-0325513820b7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c322314b9782e34d1a9c1ee93d7b8d43.png"
+    },
+    "galeria_0185_estilo2.png": {
+      "id": "54a62e14-8b63-4545-a2d2-cc9f96ff91e2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5b808b31336e296c51b84105924c1c243.png"
+    },
+    "galeria_0186_estilo3.png": {
+      "id": "1fe7c259-c79f-4dc1-bed0-7f581900e8b8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/15dc98b442a271ca8983a31c9eca966d.png"
+    },
+    "galeria_0187_estilo1.png": {
+      "id": "b52bc03e-a052-4247-88ba-694e4d8bff28",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ce940fa2214fd4d34a38f32418381750.png"
+    },
+    "galeria_0188_estilo2.png": {
+      "id": "6bfc24d5-268f-4d77-9003-2f19530e5216",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4dd25c2a7ee81bdc92252362e241810c2.png"
+    },
+    "galeria_0189_estilo3.png": {
+      "id": "d7688f0c-6395-42e6-b36d-10324a9dc183",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5b4496052ec84f02e3d57108b4d7e91ad.png"
+    },
+    "galeria_0190_estilo1.png": {
+      "id": "8d207215-aa11-470a-800e-422d092c4fa5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7552d107c81030eecfa8d9ed4193f9ebc.png"
+    },
+    "galeria_0191_estilo2.png": {
+      "id": "7180b792-4138-4a96-80b2-f3d890194bff",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/055aad0e139b0932a30f656c6310caa78.png"
+    },
+    "galeria_0192_estilo3.png": {
+      "id": "d886493b-7f6b-4053-898b-b7bde2d2d270",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6ad85424b3a7a3f21019371e2bbecd4d.png"
+    },
+    "galeria_0193_estilo1.png": {
+      "id": "be3a523e-0c4a-46fd-bb21-2abbda3a3b76",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2e7bbc5f2528469f296b5a3736792e3a.png"
+    },
+    "galeria_0194_estilo2.png": {
+      "id": "471e4027-4252-4c47-8c8c-24edecee7e74",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6a493de2a68c12f310a6b83b4034ff10dd.png"
+    },
+    "galeria_0195_estilo3.png": {
+      "id": "d256de93-ddf3-4ad4-9cf9-0d3d49aabd1d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4b10bac1783511baa4e3156b83607d0e1.png"
+    },
+    "galeria_0196_estilo1.png": {
+      "id": "76c41cf3-95a1-4708-8e2e-fca6caefef99",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/105ae626d0cdd049eb934334b98e0d8ed.png"
+    },
+    "galeria_0197_estilo2.png": {
+      "id": "6fa9f1c2-2a6b-424e-869b-8a45ca6b01a9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/558a8f14429141fd94b36ea4a30bfbbc.png"
+    },
+    "galeria_0198_estilo3.png": {
+      "id": "a32fac28-4d59-4a25-a11d-341f93c0022b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c2162749fd9108640419ad16ab278d8f3.png"
+    },
+    "galeria_0199_estilo1.png": {
+      "id": "b2c3ca83-6918-4d0e-9ed0-d39aeebf6d20",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b7510cebabbf9f6c25f9123de90abe4a5.png"
+    },
+    "galeria_0200_estilo2.png": {
+      "id": "43aeb8c0-dd9e-45bb-9de8-21b743081158",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6e271ec109dc8d67f104df68f25fb6fe4.png"
+    },
+    "galeria_0201_estilo3.png": {
+      "id": "b974f16f-b58a-4f6b-9480-9b64800bce34",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4a20367e74ff0919d48e7261d9748dd3.png"
+    },
+    "galeria_0202_estilo1.png": {
+      "id": "5dfb41b8-83a6-44a3-8b46-d090a68e860a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9d5b8738fba6179c228b65ea55cbd107e.png"
+    },
+    "galeria_0203_estilo2.png": {
+      "id": "c56a6884-91e1-4949-b509-2b972fb5e55b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/77f819c4f5ccefcbd17b858a38759abd.png"
+    },
+    "galeria_0204_estilo3.png": {
+      "id": "27d027ae-55ce-4b63-b4b3-764e53a10210",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/aea6e8bca24010649d710b011a89d4cb28.png"
+    },
+    "galeria_0205_estilo1.png": {
+      "id": "bb98e6d1-ab05-48f3-9f34-08250e6b90fb",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/df18402bb9010c294740804f0ce2f7a9.png"
+    },
+    "galeria_0206_estilo2.png": {
+      "id": "e5b2b08e-2b88-4a63-a302-37adf09a708c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/81552b26d34558678a4624b9ebd6b6c4.png"
+    },
+    "galeria_0207_estilo3.png": {
+      "id": "62c7122f-c720-41fd-927b-c25f0b837fc7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6eefcf4da7b5a2210983533c0e2722edf.png"
+    },
+    "galeria_0208_estilo1.png": {
+      "id": "85739b47-e4d9-46c7-b907-c11892f5cebc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2471bde561e398d2e5ce107753853d4f9.png"
+    },
+    "galeria_0209_estilo2.png": {
+      "id": "e4996eee-b022-45a4-9099-359356e7d3b9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e59c8f8a92f1010dee233d02216d3bb283.png"
+    },
+    "galeria_0210_estilo3.png": {
+      "id": "78a463b3-fe33-431a-bbfa-017b33c6299e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/32102c8618abbfadab4ba61386edddce5.png"
+    },
+    "galeria_0211_estilo1.png": {
+      "id": "063d0cf8-29e2-4578-a4d7-0dcf18c66f48",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10212a106f5ac05a7ddea5cfd82e3d87ac.png"
+    },
+    "galeria_0212_estilo2.png": {
+      "id": "3fcf2b5e-b118-4378-89c5-05c72dbf0a0f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c65c3a6a42588231fbb6fd548b9d4e1b.png"
+    },
+    "galeria_0213_estilo3.png": {
+      "id": "623c79c3-6837-4c72-839c-4df938fa0b08",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2e85eecc7115dcbfacb77bb88e34db17.png"
+    },
+    "galeria_0214_estilo1.png": {
+      "id": "54e089d9-10be-453f-a608-6e9544c960d1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10a6d108533153be2101aaa3e17d67c724b.png"
+    },
+    "galeria_0215_estilo2.png": {
+      "id": "18868ed5-5d33-49b8-bf4d-2ef614f3ddda",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c151442404a8bbea75151a8079371bec.png"
+    },
+    "galeria_0216_estilo3.png": {
+      "id": "e28f1122-c000-4272-a8f1-0078d27e0d26",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e2ee71b80e10975490bac01f7d1e2e7ca.png"
+    },
+    "galeria_0217_estilo1.png": {
+      "id": "d9515346-8ac7-4386-85e4-34bca273ad06",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ce0e10c4b941b1d64b13cee109d9292232.png"
+    },
+    "galeria_0218_estilo2.png": {
+      "id": "3576236b-ed12-47c1-9211-eab3741338fa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ad89d16e02d3b5ba1013e8ee3b5f676c0.png"
+    },
+    "galeria_0219_estilo3.png": {
+      "id": "7795b539-2a1a-423b-aabb-b20d436b861e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10b2a21e1094d1a735e5881bec7bff7da10.png"
+    },
+    "galeria_0220_estilo1.png": {
+      "id": "acb217f0-8d0e-4c6c-9ff5-24ac89a0471d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4ae98aca78f0c33c834ee0cb9d0393c6.png"
+    },
+    "galeria_0221_estilo2.png": {
+      "id": "39f51901-5229-4c3b-b975-3f167dce43ea",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/179ec1f5c096248f116dd7a8424ae7de.png"
+    },
+    "galeria_0222_estilo3.png": {
+      "id": "3eeb68c3-a6eb-4560-b6f7-f4d539b8fba9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cef17d5afd873a520c7383291968e986.png"
+    },
+    "galeria_0223_estilo1.png": {
+      "id": "cb0bcafd-253d-49c4-809c-e63477e27bcd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/106d12f653b97712fc25b4f8b28afdadd.png"
+    },
+    "galeria_0224_estilo2.png": {
+      "id": "e44aa8f7-9a34-40ab-8301-c219d659409b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/810efbc75dd5766ab10adf50e954290d5a.png"
+    },
+    "galeria_0225_estilo3.png": {
+      "id": "4c7f59c2-533a-42da-a962-c9894e67dd4d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d14becbcb829f3ffec9292124fda110bd.png"
+    },
+    "galeria_0226_estilo1.png": {
+      "id": "e8c45d68-5434-4c0c-a33c-fff8db2324d4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/796b11042f4410b939e33536d12994e246.png"
+    },
+    "galeria_0227_estilo2.png": {
+      "id": "06448910-43be-4e2f-86fb-987b27843312",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f5f50d62a86b9213f18e710b1019830ddf.png"
+    },
+    "galeria_0228_estilo3.png": {
+      "id": "7a2a849d-17aa-40b4-8b2c-fc858c4dd3bd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9db7e5e2b28a28e107324e4ba7254c832.png"
+    },
+    "galeria_0229_estilo1.png": {
+      "id": "3eac5e61-21ec-4378-93bf-ddc3bc0e00d8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/104570e10b2c4b810a91819e5a419c541ff.png"
+    },
+    "galeria_0230_estilo2.png": {
+      "id": "cfce28c7-0f83-4721-9f5a-f3eafb1a8fdc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7aedd6feb32b8662bcd712a3738a35f5.png"
+    },
+    "galeria_0231_estilo3.png": {
+      "id": "3986d52c-de73-4162-9cb4-d47523f05adc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9d410e10fc6f3ee0dec10e3b23b9810275d2.png"
+    },
+    "galeria_0232_estilo1.png": {
+      "id": "d7881783-21df-4bba-a99a-0286542cd45d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6b102ce5bca961d214e89bc8f8ef445eb.png"
+    },
+    "galeria_0233_estilo2.png": {
+      "id": "1f8e8431-a2af-42a1-bc99-9d3b1ce17745",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/86efd100386b65e33b5ebe26ba1a615ed.png"
+    },
+    "galeria_0234_estilo3.png": {
+      "id": "30d693df-2eed-452d-8041-6133ea82ef10",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8ab449c0d4ce1717a72ca7f1dcae5c89.png"
+    },
+    "galeria_0235_estilo1.png": {
+      "id": "eb117998-083a-43b2-950d-d2f7f9060a5d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1882f67f076cf72f9615faaa45a7995a.png"
+    },
+    "galeria_0236_estilo2.png": {
+      "id": "7cb6b612-0343-43d8-b59e-05ce5cb784b4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10214cf10c6f4fd8664bdce101c39450532.png"
+    },
+    "galeria_0237_estilo3.png": {
+      "id": "992b10d6-41be-4532-b7f0-55cc93ebb6c2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/51c54104cfdd5b3af5b64c6c1e498a31c.png"
+    },
+    "galeria_0238_estilo1.png": {
+      "id": "9d7727bb-3eee-4c10-b6f1-4f312200440a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/76861825a9c751ceb8e5c0dea2316ac6.png"
+    },
+    "galeria_0239_estilo2.png": {
+      "id": "4143bc30-449d-45e3-8a8b-e2e0150341ff",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9568c95347d7d67e7331cecd88ea2d19.png"
+    },
+    "galeria_0240_estilo3.png": {
+      "id": "9f3e45b3-6c67-4706-a70d-d68095fba7fa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/72e22fd033a4baf8458947375331df51.png"
+    },
+    "galeria_0241_estilo1.png": {
+      "id": "e80b4f4c-acd3-47ea-8678-d6194cc4149d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eed1edf1074b84a66b19c63ef5a21e776.png"
+    },
+    "galeria_0242_estilo2.png": {
+      "id": "a70f4922-f7ca-4a98-ab9a-f1602dea80c6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4bd311dc5a28259886bd79ae6893a329.png"
+    },
+    "galeria_0243_estilo3.png": {
+      "id": "74330a07-56f9-4026-8b30-369eae86c35d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/febce2f01c86dbe19685ebc88bccedc2.png"
+    },
+    "galeria_0244_estilo1.png": {
+      "id": "7168afde-5495-4e1a-9741-60a43d4d2055",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eab3410df0b79c2102d8b7e3f3b1e5346d.png"
+    },
+    "galeria_0245_estilo2.png": {
+      "id": "7f2368aa-9d7f-4c3f-ac1b-fa303f9263a0",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/810b08b107d509f103e2f15c7cdc447a7af.png"
+    },
+    "galeria_0246_estilo3.png": {
+      "id": "7b360c9b-dd9c-4e05-91f7-214214f54451",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b76a89bbcc273d61bd48733c688c110101.png"
+    },
+    "galeria_0247_estilo1.png": {
+      "id": "1f7f9b8f-1764-4ac5-8eb1-41b21de363f5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/354f871a0e435161c36f31eec81d9528.png"
+    },
+    "galeria_0248_estilo2.png": {
+      "id": "524e36fd-031a-4d06-8a91-daf991421e5e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/18000f106814f954248be26f1a3e1dc28.png"
+    },
+    "galeria_0249_estilo3.png": {
+      "id": "506af0f0-d682-4e4d-a25f-a37071e21128",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6e29d235c110cfc7dc91304b88c69a84e.png"
+    },
+    "galeria_0250_estilo1.png": {
+      "id": "a4252420-04fe-441b-9f2d-1cdbf1453675",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3065c109ad69c39fc4bbbe4de5e10ebee.png"
+    },
+    "galeria_0251_estilo2.png": {
+      "id": "16b69a32-145f-4c54-84b2-2bc9b0585e3a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/21930c27ebbfe628f9a587e2e794910610.png"
+    },
+    "galeria_0252_estilo3.png": {
+      "id": "318281d1-0ecc-46ea-9951-05ee743a7548",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b81b5eb4e2410b222fc37b355a07952810.png"
+    },
+    "galeria_0253_estilo1.png": {
+      "id": "b14f6b76-d165-4807-bd98-68a287a45f15",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/23e4732dadebc41294f875a8ddd610f89.png"
+    },
+    "galeria_0254_estilo2.png": {
+      "id": "a8ab2502-b208-4e25-90a4-237aa9193de8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1aba1045fa5cad233d7b276c4c74a6212.png"
+    },
+    "galeria_0255_estilo3.png": {
+      "id": "54735ecb-eba1-426f-af35-896af5005c41",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f5b73e8ee5e90751ef69e882eea84faf.png"
+    },
+    "galeria_0256_estilo1.png": {
+      "id": "6dd669cc-266f-43aa-b688-263164e0f1b4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a2df9a1cd4c2dcc1818f6605881101044b.png"
+    },
+    "galeria_0257_estilo2.png": {
+      "id": "6c4d7885-1fe3-49a8-89c1-b455404c93e4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/310f24771a8343c2044c748a11f3e58ec.png"
+    },
+    "galeria_0258_estilo3.png": {
+      "id": "ed7bb492-70fb-4c71-b463-5c9e01c2d037",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1d3818d1075cb43ed819251e8a56c5da5.png"
+    },
+    "galeria_0259_estilo1.png": {
+      "id": "7f691aef-cb8a-47be-9c29-d22367c84ea9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/398824717e94fd966249514f35a9b47e.png"
+    },
+    "galeria_0260_estilo2.png": {
+      "id": "5ed9940b-f785-47b9-8702-5edc55c04789",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1817933ee66a95810b68f3e3c4e611461.png"
+    },
+    "galeria_0261_estilo3.png": {
+      "id": "8214b696-68dd-4144-8548-4f8014a08efe",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cdab6abe84e9f9ccdb8ef15363f47759.png"
+    },
+    "galeria_0262_estilo1.png": {
+      "id": "4c407379-12d6-437d-b7dc-0525355810d3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/db988dc8f1081100f9dc4bb3a65358c810.png"
+    },
+    "galeria_0263_estilo2.png": {
+      "id": "c75cac80-751d-4473-84cd-96c8b8a1c3e1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1db8eb1f70e3bf7623763c2d8eeaebe5.png"
+    },
+    "galeria_0264_estilo3.png": {
+      "id": "9ef0fdda-73f3-4fef-bdfc-29e4dec928a3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/876eec910d66b5a586f8c3d15dc3b49ab.png"
+    },
+    "galeria_0265_estilo1.png": {
+      "id": "38e04c80-a77e-4976-a4e4-9101c409c8a5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4cb1fcd623a519f427f37101ee4ed5725.png"
+    },
+    "galeria_0266_estilo2.png": {
+      "id": "bc701bd3-692e-41b4-b5b5-d0a743b2a044",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/90bf3d4c774bba5624247371e2c3124d.png"
+    },
+    "galeria_0267_estilo3.png": {
+      "id": "0c631553-52f2-4eb9-85cc-2788788681d8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9d6631e4daf179cfc5c6157e19efb2d8.png"
+    },
+    "galeria_0268_estilo1.png": {
+      "id": "9ca7e12d-04f6-4859-ab20-8ac03024dfa8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/54b69887ec14a0334cec1de2dfdb1c2e.png"
+    },
+    "galeria_0269_estilo2.png": {
+      "id": "d4127b9a-7fed-40e9-9901-17278a70b4da",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ab22584ebba2764f80cf109d1abca1515.png"
+    },
+    "galeria_0270_estilo3.png": {
+      "id": "a34b685b-414b-40e2-a628-d54578ee8744",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10fcc9fa3fb7789e3d4a43e78d14956b9.png"
+    },
+    "galeria_0271_estilo1.png": {
+      "id": "8151867f-08c5-47a6-8f90-c89384079f4e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9e1764191ed87df139a5cb0c515dc96a.png"
+    },
+    "galeria_0272_estilo2.png": {
+      "id": "bfd431a8-7a61-4fdd-b377-fe0a335ce36a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/25e1846680d10a13fce75adc9ec36f0ed.png"
+    },
+    "galeria_0273_estilo3.png": {
+      "id": "d47f5657-21f0-43d8-8d57-368dafc3f1ab",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/80cf0568329112efa8a774f7164a0786.png"
+    },
+    "galeria_0274_estilo1.png": {
+      "id": "48a7d3c7-0b10-4859-958c-b603248c0fd1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/768e3a7254c7bc44156592e868f79bc7.png"
+    },
+    "galeria_0275_estilo2.png": {
+      "id": "8ed0f27b-199c-49db-aef0-526576bd77ae",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e352a6bb101010c64111c24b3aba1223e57.png"
+    },
+    "galeria_0276_estilo3.png": {
+      "id": "6ca1c8f3-bd47-45d1-a798-aff013238e35",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f433982c645466cbe5e606288affe879.png"
+    },
+    "galeria_0277_estilo1.png": {
+      "id": "8506e8ff-5f1c-412b-aa44-c2f7557b4549",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cbfd4f6aa4796610a921d13f3e94bc55e.png"
+    },
+    "galeria_0278_estilo2.png": {
+      "id": "a0a4334a-436d-4499-95f1-c0aca7d9ca79",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c6cc6253aeeb19b6478608a360179cd7.png"
+    },
+    "galeria_0279_estilo3.png": {
+      "id": "9f2e522a-7b07-45ae-bada-ee1bb8c57d45",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e07c34aced54548a5acbdf91f7dbc1ad.png"
+    },
+    "galeria_0280_estilo1.png": {
+      "id": "48d8b94d-7208-4c3c-8c30-83485870bb02",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/53f7bea970bd8cdbb31c6f2a9ee080d6.png"
+    },
+    "galeria_0281_estilo2.png": {
+      "id": "fcc59c1a-817b-43c0-9029-390ee005dd38",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c1509c3231041ab1511c184e4ee58fa4a.png"
+    },
+    "galeria_0282_estilo3.png": {
+      "id": "66b07672-88ac-4b0f-bf5d-544aafaf6dd3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b636d6b5365e1b19dcbdd80be22b3686.png"
+    },
+    "galeria_0283_estilo1.png": {
+      "id": "fb97e523-e5e1-4038-887c-6d5f1cc8d8b5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7fc10e0bfc2e4873927ea5d68799ba7104.png"
+    },
+    "galeria_0284_estilo2.png": {
+      "id": "195440aa-9f0d-4ab1-871b-96cd3c9906fd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/993481068744ce2c1107a95a4d2de5c553.png"
+    },
+    "galeria_0285_estilo3.png": {
+      "id": "db82a592-76ff-4242-b1ca-252dedfd5e30",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/240c77d10852d266a224851100cecdc56.png"
+    },
+    "galeria_0286_estilo1.png": {
+      "id": "f36c8fe2-b01b-4971-b742-ae5c30b6f682",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b42d37af10a42dc58e1d696d5c37bcba2.png"
+    },
+    "galeria_0287_estilo2.png": {
+      "id": "60e08318-2176-4f28-9ff9-32063c0bca83",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cc275aec5cedf5f0eb32529e5591e463.png"
+    },
+    "galeria_0288_estilo3.png": {
+      "id": "81c5f064-e647-4946-815a-2e21a3b07306",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/310fee105964233178f36931097856354c1.png"
+    },
+    "galeria_0289_estilo1.png": {
+      "id": "06cc9ada-7154-4b6c-ba7d-15247b84b67d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3d7ddf31b7ffe3dc93bdbd71cd018911.png"
+    },
+    "galeria_0290_estilo2.png": {
+      "id": "863b567a-10ca-4297-8875-6336332edfa3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d960f52b81b0f1edc93382f78bf2185f.png"
+    },
+    "galeria_0291_estilo3.png": {
+      "id": "9aa37528-6b54-4d7f-a178-791368e9a631",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/55666f6f97d7a1d6104b24ec423256102a.png"
+    },
+    "galeria_0292_estilo1.png": {
+      "id": "0cbc7a1c-ec05-48b7-b22b-b32e93d0259d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/383bdf101d9e3ae6c109010efb1bc2d4e9a.png"
+    },
+    "galeria_0293_estilo2.png": {
+      "id": "55b848dc-64f2-42bd-a0a3-0b4d5a765aae",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8c5ad1c266c77e1d36d9bfccbfece744.png"
+    },
+    "galeria_0294_estilo3.png": {
+      "id": "6dd571af-ea16-4eee-a7cd-ae536d31d1db",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/11e5276207d694dff985fa1049f373c45.png"
+    },
+    "galeria_0295_estilo1.png": {
+      "id": "c2bfdf96-e6d6-4507-b7fc-2ca737e174a5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c25b83e2ecdc11ac0e34c27a1863ec77.png"
+    },
+    "galeria_0296_estilo2.png": {
+      "id": "690d4b7a-bf53-4124-b9c8-78799e9e736d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f57f5d064ad09df6c538f2d363861cf9.png"
+    },
+    "galeria_0297_estilo3.png": {
+      "id": "c3b75d15-ef3d-4432-aeb7-6b21e2e861ed",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10ac8aa677c6ac2d9ed26f88a38b4c2e6.png"
+    },
+    "galeria_0298_estilo1.png": {
+      "id": "cad2fc10-5ec5-4328-96e9-a0a50beb4ffd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/76e104bbda7ebd47c43b4f1032a1f5b58f.png"
+    },
+    "galeria_0299_estilo2.png": {
+      "id": "7a9f43e1-cce2-4655-9b9f-4b5917ac5de4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/424b95f3a89823d1f38c11baa92b6f25.png"
+    },
+    "galeria_0300_estilo3.png": {
+      "id": "7a675da1-6d8a-4dad-a443-4c0490bef226",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/da381358fca28e30ac815c2a4e029a9d.png"
+    },
+    "galeria_0301_estilo1.png": {
+      "id": "e05a5a18-6c27-419c-9872-2c30713eff76",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/aecc7c5147c5e55994841076b1dfae6ce.png"
+    },
+    "galeria_0302_estilo2.png": {
+      "id": "354f8dd0-f3bf-49e4-8c13-93f239985a54",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/701c1617441289c64748287110fbf3b0b.png"
+    },
+    "galeria_0303_estilo3.png": {
+      "id": "0bdacd15-97c4-4b0b-b99e-ef6e426241f1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cc3f444d912d29c549a88afd91dfdeef.png"
+    },
+    "galeria_0304_estilo1.png": {
+      "id": "14e5cdb7-e2a8-48e2-b2d0-c373ec049a7d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4cbbdb7b10e58b27d88fad4d065215d93.png"
+    },
+    "galeria_0305_estilo2.png": {
+      "id": "8ab1d52e-2034-4bb8-b4bc-d699248ffae5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/eacb79b102bd4a1108ad0f64eddbc6d3d5.png"
+    },
+    "galeria_0306_estilo3.png": {
+      "id": "80bac004-f692-4cab-bcb4-a87d76cd8a58",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/510dcdaed090fce394e4ef88581156e62.png"
+    },
+    "galeria_0307_estilo1.png": {
+      "id": "e7e6015c-330c-4653-b83e-50680e60065c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/556f8210f10f5ed4d109f433b4761296a82.png"
+    },
+    "galeria_0308_estilo2.png": {
+      "id": "e7bb7511-c4af-45ab-a886-3bad8aa08f2d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7dffb01eb95859b0873d63d10b455688e.png"
+    },
+    "galeria_0309_estilo3.png": {
+      "id": "27434362-efbe-4697-b028-edc6039f7dd4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6ccf44f8c4c86ce237f92c285310777d8.png"
+    },
+    "galeria_0310_estilo1.png": {
+      "id": "12663688-fac6-4fc7-b05f-8a6179896b09",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9946b10c10fe1cfe62e4d3d19bb256bde9.png"
+    },
+    "galeria_0311_estilo2.png": {
+      "id": "b19bf5ed-4097-4e5a-bd92-c2e7cd80d456",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/0915e84f04ff3ffccf4f43451024cdd6d.png"
+    },
+    "galeria_0312_estilo3.png": {
+      "id": "d6f71e2f-b04d-4a4b-8aeb-ef81137f0645",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/112c2ebeece0d019992c2cfea7e6b1d5.png"
+    },
+    "galeria_0313_estilo1.png": {
+      "id": "dd26d73d-5e6f-4a9a-b5f1-8f8646cf805b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1064d978d7c30e3f4175b49921064d3b48.png"
+    },
+    "galeria_0314_estilo2.png": {
+      "id": "29a0cfe0-033a-4d7b-846d-e5f66a9dde21",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/54a5546dec848f8084ff10b9e7aa5afb4.png"
+    },
+    "galeria_0315_estilo3.png": {
+      "id": "4d576340-411f-419d-9ed0-6b2f4d2db4ad",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/57e5360da8c45dc084d38ab1a544fefb.png"
+    },
+    "galeria_0316_estilo1.png": {
+      "id": "b75f30e8-d6e0-4286-a76d-8854783dc2a7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/18f66d7144b236f24034de6fa4447aed.png"
+    },
+    "galeria_0317_estilo2.png": {
+      "id": "c1aebd7f-4021-4c8f-83e5-fc5363262fe9",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/aac9ba17e9068d1b45b86d9b316c5168.png"
+    },
+    "galeria_0318_estilo3.png": {
+      "id": "dae2c984-ab6f-4e30-9e22-73ee0b4af1a6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4bb317cccda456626a43927cf69fc86b.png"
+    },
+    "galeria_0319_estilo1.png": {
+      "id": "0f13fb00-281a-4881-b353-f7838ced5e59",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ac29b5f337c679f53ed7f74ae810edcd3.png"
+    },
+    "galeria_0320_estilo2.png": {
+      "id": "bf492930-1bc8-46a9-b6ae-41d56d87b601",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c53fb6b10fda6a13d41c45b3afa1071a41.png"
+    },
+    "galeria_0321_estilo3.png": {
+      "id": "eaa32e58-5e6c-4970-90c3-66f72ef7a6d8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9e82fb109f9607b7fea5f85f0b658a6fd.png"
+    },
+    "galeria_0322_estilo1.png": {
+      "id": "c498d0f7-433a-475e-a671-6070d7ddb74d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ce310792e0e4be1b045ffbe071e77aa31.png"
+    },
+    "galeria_0323_estilo2.png": {
+      "id": "bde42663-9053-42e0-9cca-5e6c8af74bf4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7a38d7ed9e279aced5e3d6cc58c362b4.png"
+    },
+    "galeria_0324_estilo3.png": {
+      "id": "f5a775d2-35ab-40b1-b9db-31d1d8866aed",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d34ce0f1b701943a17ccd0fa2c202132.png"
+    },
+    "galeria_0325_estilo1.png": {
+      "id": "a108f8a9-3e5c-4610-9fa5-a5da3b5a3c86",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e0eb53ed2d61971f9101611010aff1021d5.png"
+    },
+    "galeria_0326_estilo2.png": {
+      "id": "a89db0b1-9845-4289-a1db-a7a2bb78e906",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/867512d8710852b17baecd9059c6bd4c3.png"
+    },
+    "galeria_0327_estilo3.png": {
+      "id": "b541dad6-1ff8-433a-9cd9-2ffcef7154ca",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e10257c4d9e12fcd427e4d6847412428a.png"
+    },
+    "galeria_0328_estilo1.png": {
+      "id": "f4899ecd-aa86-4f0e-8fc0-fc9ef94f68a2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d576b1ba14facca752a9166f04f6e93d.png"
+    },
+    "galeria_0329_estilo2.png": {
+      "id": "6972b2f5-b4c6-4644-9b16-5f98e50cf5f8",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10c8bd2104b696ae5a642d94102b64658e7.png"
+    },
+    "galeria_0330_estilo3.png": {
+      "id": "39268e2a-cd8c-4346-a137-259dd434ad15",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/659e6105ebf1dfe810146476e0a5b9e33a.png"
+    },
+    "galeria_0331_estilo1.png": {
+      "id": "5ebbfab1-6c93-44fd-bbf4-26eaadcb42dd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/393cc42cbff7a4ea5d2fbf1a3be2b5a10.png"
+    },
+    "galeria_0332_estilo2.png": {
+      "id": "f0339943-8cf3-45e3-a6b5-463463ada18e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f1f32c994589596d8dda51c3ad1db45d.png"
+    },
+    "galeria_0333_estilo3.png": {
+      "id": "202faaad-a72f-49c7-9ec6-852ed0d52647",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/87ce56d74222956d7104345d50af4046d.png"
+    },
+    "galeria_0334_estilo1.png": {
+      "id": "0f8623b0-40df-4f68-8dc5-3ac9ef8f945f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6296a7dd58a715143d1017c88df6bd493.png"
+    },
+    "galeria_0335_estilo2.png": {
+      "id": "cfef8bd9-9cae-4c91-9ea0-6a0c4f177057",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d08db4124881069c8b3c81cb03bf1105ac.png"
+    },
+    "galeria_0336_estilo3.png": {
+      "id": "ea450d03-23be-4fef-91dc-2e44074ec19a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/46fc1e35453332569badb6290bd4aacc.png"
+    },
+    "galeria_0337_estilo1.png": {
+      "id": "5926007c-b9de-4984-933d-35116364f221",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ea7bb83e9b5e6f92d121dd1fc9f47878.png"
+    },
+    "galeria_0338_estilo2.png": {
+      "id": "a88508fe-0679-4aec-80fd-25848b7c0554",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9a555bebaab4d3b43d93a10b999650211.png"
+    },
+    "galeria_0339_estilo3.png": {
+      "id": "e3615a26-bc63-415d-89e3-87236ea76ed5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a6ae1a7c66a31b410b99ee210128356bae.png"
+    },
+    "galeria_0340_estilo1.png": {
+      "id": "07a563b2-f820-4867-af84-a43e6bada955",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b784dad2e91a283a43d1070c93b6b2e12.png"
+    },
+    "galeria_0341_estilo2.png": {
+      "id": "015bf429-d2cd-4f4b-a18e-575721b04855",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9f5773d17424cd103c15e7c7c92916512.png"
+    },
+    "galeria_0342_estilo3.png": {
+      "id": "5aca4e5f-a2e6-42b8-989c-8a5313d68724",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/8434f6fdc8f5bf35ceb1b108c9755e526.png"
+    },
+    "galeria_0343_estilo1.png": {
+      "id": "1fadc98d-ba2f-4693-8aee-ae8910497aaa",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/521e55b87e825cd48ecfb481093af910c7.png"
+    },
+    "galeria_0344_estilo2.png": {
+      "id": "81fac9ba-1d79-4640-a16a-df9e9a88b60c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/649e105cb28d61819087ac39a8420414.png"
+    },
+    "galeria_0345_estilo3.png": {
+      "id": "a449fe4f-441a-430b-bfa9-8d11532ffa06",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6b0b6797cc438d02558e9c9d37c806bc.png"
+    },
+    "galeria_0346_estilo1.png": {
+      "id": "ceb38b6a-837d-4d82-b7e8-3ecc383e7cbc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2784edb9db11971c15bb2d7569dbb25c.png"
+    },
+    "galeria_0347_estilo2.png": {
+      "id": "a0ce4045-2445-45da-a983-f8d51b41a575",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/444b710f2176c4aa076d9a52db6a6ad16.png"
+    },
+    "galeria_0348_estilo3.png": {
+      "id": "13d24b7a-0b9f-40b3-b66d-fdb7062a1e19",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/6e768e277de96ff6cd56edfa008f49e9.png"
+    },
+    "galeria_0349_estilo1.png": {
+      "id": "42b65217-b19c-4bbc-bbbe-870388dbbc2a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f2bf81aa6742590cc4fd024892d39223.png"
+    },
+    "galeria_0350_estilo2.png": {
+      "id": "4678e396-7b61-4b93-8160-3490516ae7ea",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5d86e85310de947f9429d949fe9363b5f.png"
+    },
+    "galeria_0351_estilo3.png": {
+      "id": "9052caf0-ee68-498e-a693-f0cae53bd7e1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b603d60b82b95e5281006578e129eead3.png"
+    },
+    "galeria_0352_estilo1.png": {
+      "id": "d48e54ad-9b92-446a-8f62-e41e6ce93b80",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/10017ad9b1d0e5a04cdc75edddcc5d7e9.png"
+    },
+    "galeria_0353_estilo2.png": {
+      "id": "90966f4c-1d77-4f53-9357-77c2ee1c90d5",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4681cc10ff8c2149109f5dced70dcafb6d.png"
+    },
+    "galeria_0354_estilo3.png": {
+      "id": "c462c0fe-d6d2-4052-89ab-07a781e77615",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a0863d886217aedf2651bf691b08b622.png"
+    },
+    "galeria_0355_estilo1.png": {
+      "id": "7d5dbfc5-98f4-48ad-b067-0b0f83cb05bf",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/7ed897b41ddff41aeef57b95ff105ea109.png"
+    },
+    "galeria_0356_estilo2.png": {
+      "id": "27ea3078-59eb-434b-a142-17fa8561d235",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f61c929b2dece1f892b0dcdefc69aaaa.png"
+    },
+    "galeria_0357_estilo3.png": {
+      "id": "6e45d7b6-f83a-405b-a6b5-e52c12444217",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ff5f3fa48a809dc7f189d1335210f9132.png"
+    },
+    "galeria_0358_estilo1.png": {
+      "id": "69fbd0fc-13a6-4499-ba3b-2dfa1c5509d4",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/94e102fb35c4893ff126d8369db378bf4.png"
+    },
+    "galeria_0359_estilo2.png": {
+      "id": "992f48ee-306c-4a7e-977d-d38004691ca2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/522f4469d3cc938cfc1310fb747f12909.png"
+    },
+    "galeria_0360_estilo3.png": {
+      "id": "a35b1427-616e-46c1-b6d5-c4627442fc33",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/aebd95b8cfe0f6cdfe314c0df56aef6e.png"
+    },
+    "galeria_0361_estilo1.png": {
+      "id": "9584dcaa-0567-429a-932f-c018f4e4f0fb",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5736e40b418239be30acf2ca144b3cd3.png"
+    },
+    "galeria_0362_estilo2.png": {
+      "id": "e3bdfc21-5321-4237-a99f-728b8ba17cc3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4210bea8650d5f6f7105073dbe1a874f1f.png"
+    },
+    "galeria_0363_estilo3.png": {
+      "id": "b7319cb6-610a-448f-959e-82cc889bb5fe",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/c4dfcae15ce4ca9df95e6fd2e971410d10.png"
+    },
+    "galeria_0364_estilo1.png": {
+      "id": "76638d1b-c39d-447f-a3b7-adae3bc88bff",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d4c3a2652e48e1f7c547f6dd0a75cecc.png"
+    },
+    "galeria_0365_estilo2.png": {
+      "id": "1ce750f3-6fe4-48c9-b1fc-f5b49d64c70f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4cf1109bbf21d9d3522137bae22541ace.png"
+    },
+    "galeria_0366_estilo3.png": {
+      "id": "474e4839-eeb6-45bf-9e68-0b0e336c763f",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d65e8460ad210798b66c6a719f85ea463.png"
+    },
+    "galeria_0367_estilo1.png": {
+      "id": "f80468bf-5065-4418-b116-268c75d2db19",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/5943cc4cacb4355a237371cccec0d873.png"
+    },
+    "galeria_0368_estilo2.png": {
+      "id": "5d15736f-2f7d-46da-930d-8d1416f6bc47",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/74109487c85ccaa379f7379e8770ff842.png"
+    },
+    "galeria_0369_estilo3.png": {
+      "id": "dba415cb-8d04-4de6-beab-c3360768804a",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d53dccc4ac964b9a85c8a7e6fc66dcbc.png"
+    },
+    "galeria_0370_estilo1.png": {
+      "id": "3a0be1a0-7fd0-4ad6-a121-30f357c0f475",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/3567f7e55c10dfad8cc5810992e2d55f67.png"
+    },
+    "galeria_0371_estilo2.png": {
+      "id": "5d5e47b7-ef58-4e79-b337-40d2181f49cc",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/221e9e5ebf8a10acc2bf154fd889651e1.png"
+    },
+    "galeria_0372_estilo3.png": {
+      "id": "bc7b05f4-1eee-4fb5-afcc-3c0cb26d50bd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d8adb791c32ca69ac3698092d35c3e65.png"
+    },
+    "galeria_0373_estilo1.png": {
+      "id": "9091342d-e3f8-43d7-be3c-976837a18bb1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a313555c486daee93fd1041a8d50e32b2.png"
+    },
+    "galeria_0374_estilo2.png": {
+      "id": "1c7b4595-ead3-4c02-921d-ee9db9a11b8e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b923a76ba763af9b10c6c47844dbb41e9.png"
+    },
+    "galeria_0375_estilo3.png": {
+      "id": "48b8cdf5-463a-4e29-a361-bb5d8c87772e",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2e90681c2b4e74fa61e5107a586f6f10108.png"
+    },
+    "galeria_0376_estilo1.png": {
+      "id": "fbeb153b-f3ba-4b2d-bdd5-da75b753ead6",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/33fccaff315ea5910e8956a37c8dba81c.png"
+    },
+    "galeria_0377_estilo2.png": {
+      "id": "ed43cdae-3838-4f93-9a7d-91008d3e8020",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/132294d651efb18763a3abdf91628d33.png"
+    },
+    "galeria_0378_estilo3.png": {
+      "id": "c4b9ece4-ac2f-4b04-8888-d28309125fd1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/1059700392baf8d36db8e52112263fa03.png"
+    },
+    "galeria_0379_estilo1.png": {
+      "id": "4ed1ffbe-7c6d-41b6-bc9e-7924b0ed0b18",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9cea677d4d3563c3210bd7632a1397210b.png"
+    },
+    "galeria_0380_estilo2.png": {
+      "id": "a6732b47-fa38-4d96-92d2-d093d574af7b",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d193101086d11cfcd1a572468966d4b71c.png"
+    },
+    "galeria_0381_estilo3.png": {
+      "id": "b58b094e-7bc2-4cb9-9d7c-a1f0e27b214c",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a4a14e159c7d10fdb40ca5243b6872bb.png"
+    },
+    "galeria_0382_estilo1.png": {
+      "id": "cf091905-ace7-425d-b7f1-b4b1a033ec65",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ace7ef9f5b2f494a20217c27ebd84d56.png"
+    },
+    "galeria_0383_estilo2.png": {
+      "id": "e4c988e5-0b1b-4fc1-87df-2af4232550c7",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/a2913c01d727ce41891277486735ef9d.png"
+    },
+    "galeria_0384_estilo3.png": {
+      "id": "4e465269-1a6d-4e81-b996-9206d84da869",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d536579289ae316910a7061011037f6c6a.png"
+    },
+    "galeria_0385_estilo1.png": {
+      "id": "694915b6-5e96-46b4-babc-c3e8f0a38bc1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/cf1c453bf47ba083285916e8b3456b41.png"
+    },
+    "galeria_0386_estilo2.png": {
+      "id": "50a5e9c1-0402-44c2-9891-b2bc4444ffea",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/252643af0f57bfd37ab44b17fc3b59b2.png"
+    },
+    "galeria_0387_estilo3.png": {
+      "id": "31d3fff6-5d0b-4313-8460-a4bf7f3a09ee",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/97a66c816c39102379122f82680b49659.png"
+    },
+    "galeria_0388_estilo1.png": {
+      "id": "b7b1810c-aff3-4e27-94c9-ffd23d985ef3",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/9a6bc2d78e8123cd12e81010d9061702ab.png"
+    },
+    "galeria_0389_estilo2.png": {
+      "id": "b13cb518-450a-4b7c-ba71-486110052fdd",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/184a5ce9ce32d7fbd357132d395cbddd.png"
+    },
+    "galeria_0390_estilo3.png": {
+      "id": "0a28a9e9-9444-431e-93f8-97139bc7b70d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f7ca3b312160e2f485d790c28dfa5b62.png"
+    },
+    "galeria_0391_estilo1.png": {
+      "id": "88210c85-9a97-4887-aca6-047fa5b0eeea",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/937ab65f3cfb133d6881648bb9de4af1.png"
+    },
+    "galeria_0392_estilo2.png": {
+      "id": "82095084-6a79-411c-ba0e-255d8e6882bf",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/2444582fc4d3e7e698bc78c10f7e82651.png"
+    },
+    "galeria_0393_estilo3.png": {
+      "id": "4b95e145-a58e-4e9a-8b2f-05e89144cad2",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/e525dbc10decdb391aca002936550c466.png"
+    },
+    "galeria_0394_estilo1.png": {
+      "id": "e8263f2e-ce46-4a70-aaa0-9b6a7a98e237",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d47978a473c227eacf170e107986fc948.png"
+    },
+    "galeria_0395_estilo2.png": {
+      "id": "3324c886-523f-47e4-8286-dc643ffd4b96",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/ee6783103594ff2a41c56b2dcc3752184.png"
+    },
+    "galeria_0396_estilo3.png": {
+      "id": "9a42ebfb-cd8f-4336-a83e-3753e88b851d",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/b1eab18210fcfa19133e98e7951107b49c.png"
+    },
+    "galeria_0397_estilo1.png": {
+      "id": "218b31e0-13ec-4430-a76f-e5e9038c02c1",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/de9f4df9d915e915d942175107cebf971.png"
+    },
+    "galeria_0398_estilo2.png": {
+      "id": "9bb4469d-2caa-4237-807d-86cdf8f2c688",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/4e53939152b916e57b28a110e437500ed.png"
+    },
+    "galeria_0399_estilo3.png": {
+      "id": "2999cf05-98e1-48e0-9e13-e6e07c6561b0",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/d97ce2fc456ce5e52a0910710b8c934d4e.png"
+    },
+    "galeria_0400_estilo1.png": {
+      "id": "8d6c6f17-0eca-473f-8656-cfae03cd2b29",
+      "path": "https://postiz.cortespoliticos.online/uploads/2026/07/10/f5ff8c2676110ac32a4c4e2108bbd3686a.png"
+    }
+  },
+  "done": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400
+  ]
+}

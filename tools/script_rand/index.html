@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria Zappelin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --green: #127a42; --border: rgba(18, 122, 66, 0.14); }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "DM Sans", system-ui, sans-serif; background: #f4f9f6; color: #1a2e22; padding: 1.5rem; }
+    header { max-width: 1200px; margin: 0 auto 1.5rem; }
+    h1 { margin: 0 0 0.35rem; color: var(--green); font-size: 1.6rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galeria Zappelin</h1>
+    <p id="stats"></p>
+    <p><button type="button" id="limpar-feitos">Mostrar cards ocultos de novo</button></p>
+  </header>
+  <div id="amostra"></div>
+  <nav id="pager-top" class="pager"></nav>
+  <div id="grid" class="grid"></div>
+  <nav id="pager-bottom" class="pager"></nav>
+  <style>
+    .grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .card { background: #fff; border-radius: 14px; border: 1px solid var(--border); padding: 1rem; box-shadow: 0 4px 24px rgba(11, 46, 24, 0.06); }
+    .card[hidden] { display: none !important; }
+    .card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+    .badge { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.55rem; border-radius: 999px; }
+    .badge.e1 { background: rgba(18,122,66,0.14); color: var(--green); }
+    .badge.e2 { background: rgba(54,65,54,0.12); color: #364136; }
+    .badge.e3 { background: rgba(18,122,66,0.1); color: #0d5c32; }
+    .card img { width: 100%; height: auto; border-radius: 10px; display: block; }
+    .legenda { font-size: 0.88rem; line-height: 1.45; margin: 0.75rem 0; color: #364136; }
+    .btn-feito { width: 100%; padding: 0.55rem; border-radius: 10px; border: none; background: var(--green); color: #fff; font-weight: 600; cursor: pointer; }
+    .amostra { max-width: 1200px; margin: 0 auto 1.5rem; padding: 1rem; background: #fff; border: 2px solid var(--green); border-radius: 14px; }
+    .amostra h2 { margin: 0 0 1rem; font-size: 1rem; color: var(--green); }
+    .amostra-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    @media (max-width: 800px) { .amostra-grid { grid-template-columns: 1fr; } }
+    .pager { max-width: 1200px; margin: 1rem auto; text-align: center; }
+    .pager a, .pager span.cur { margin: 0 0.2rem; padding: 0.35rem 0.6rem; border-radius: 8px; text-decoration: none; font-size: 0.9rem; }
+    .pager a { color: var(--green); border: 1px solid var(--border); background: #fff; }
+    .pager span.cur { background: var(--green); color: #fff; }
+    #limpar-feitos { margin-top: 0.5rem; padding: 0.4rem 0.75rem; border-radius: 8px; border: 1px solid var(--border); background: #fff; cursor: pointer; }
+  </style>
+  <script>
+    const PAGE_SIZE = 20;
+    const STORAGE_KEY = "zappelin-galeria-feitos";
+    let data = null;
+
+    function getFeitos() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); } catch (e) { return []; }
+    }
+    function saveFeitos(arr) {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch (e) {}
+    }
+    function esc(s) {
+      return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+    }
+    function cardHtml(it) {
+      return '<article class="card" data-png="' + esc(it.file) + '">' +
+        '<div class="card-head"><strong>#' + it.n + '</strong><span class="badge e' + it.estilo + '">Estilo ' + it.estilo + '</span></div>' +
+        '<img src="galeria/' + encodeURIComponent(it.file) + '" width="360" height="360" alt="" loading="lazy" />' +
+        '<p class="legenda">' + esc(it.legenda).replace(/\n/g,"<br>") + '</p>' +
+        '<button type="button" class="btn-feito">Já fiz esse caraio</button></article>';
+    }
+    function applyFeitos() {
+      const set = new Set(getFeitos());
+      document.querySelectorAll(".card[data-png]").forEach(function (c) {
+        c.hidden = set.has(c.getAttribute("data-png"));
+      });
+    }
+    function renderPager(page, totalPages) {
+      let html = "";
+      if (page > 1) html += '<a href="?page=' + (page-1) + '">« Anterior</a> ';
+      for (let p = 1; p <= totalPages; p++) {
+        html += p === page ? '<span class="cur">' + p + '</span> ' : '<a href="?page=' + p + '">' + p + '</a> ';
+      }
+      if (page < totalPages) html += '<a href="?page=' + (page+1) + '">Próxima »</a>';
+      return html;
+    }
+    function render() {
+      const params = new URLSearchParams(location.search);
+      let page = parseInt(params.get("page") || "1", 10);
+      const total = data.items.length;
+      const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+      if (!Number.isFinite(page) || page < 1) page = 1;
+      if (page > totalPages) page = totalPages;
+      const c = data.counts;
+      document.getElementById("stats").textContent =
+        total + " posts · estilo 1: " + c[1] + " · estilo 2: " + c[2] + " · estilo 3: " + c[3];
+      const sample = ["galeria_0001_estilo1.png","galeria_0002_estilo2.png","galeria_0003_estilo3.png"];
+      const amostra = data.items.filter(function (it) { return sample.indexOf(it.file) >= 0; });
+      document.getElementById("amostra").innerHTML =
+        page === 1 && c[3] > 0
+          ? '<section class="amostra"><h2>Os 3 estilos (#1, #2 e #3)</h2><div class="amostra-grid">' +
+            amostra.map(cardHtml).join("") + "</div></section>"
+          : "";
+      const start = (page - 1) * PAGE_SIZE;
+      const slice = data.items.slice(start, start + PAGE_SIZE);
+      document.getElementById("grid").innerHTML = slice.map(cardHtml).join("");
+      const pager = renderPager(page, totalPages);
+      document.getElementById("pager-top").innerHTML = pager;
+      document.getElementById("pager-bottom").innerHTML = pager;
+      applyFeitos();
+      if (typeof twemoji !== "undefined") twemoji.parse(document.body);
+    }
+    document.getElementById("limpar-feitos").onclick = function () {
+      localStorage.removeItem(STORAGE_KEY);
+      document.querySelectorAll(".card[hidden]").forEach(function (c) { c.hidden = false; });
+    };
+    document.body.addEventListener("click", function (e) {
+      const btn = e.target.closest(".btn-feito");
+      if (!btn) return;
+      const card = btn.closest(".card");
+      const f = card && card.getAttribute("data-png");
+      if (f) {
+        const arr = getFeitos();
+        if (arr.indexOf(f) === -1) { arr.push(f); saveFeitos(arr); }
+        card.hidden = true;
+      }
+    });
+    fetch("manifest.json")
+      .then(function (r) { return r.json(); })
+      .then(function (j) { data = j; render(); })
+      .catch(function () {
+        document.getElementById("grid").innerHTML = "<p>Erro ao carregar manifest.json</p>";
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

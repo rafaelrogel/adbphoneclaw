@@ -1,0 +1,10 @@
+{
+  "name": "openclaw-caveman-hook",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./index.js",
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": { "pluginApi": ">=2026.6.11" }
+  }
+}

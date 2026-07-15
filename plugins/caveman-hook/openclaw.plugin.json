@@ -1,0 +1,13 @@
+{
+  "id": "caveman-hook",
+  "activation": {
+    "onStartup": true
+  },
+  "name": "Caveman Always-On",
+  "description": "Injeta regras de comunicação caveman em todo turno do agente via before_prompt_build.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

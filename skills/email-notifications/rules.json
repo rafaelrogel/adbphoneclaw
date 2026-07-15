@@ -1,0 +1,9 @@
+{
+  "accounts": {
+    "contato@zappelin.com.br": {
+      "provider": "zoho",
+      "notify": "all",
+      "description": "Sempre notificar todos os emails desta conta"
+    }
+  }
+}

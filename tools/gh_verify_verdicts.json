@@ -1,0 +1,1082 @@
+[
+  {
+    "repo": "eubrunocase/GalileuCLI",
+    "path": ".env.fake",
+    "label": "AWS",
+    "verdict": "FAKE",
+    "secret": "AKIAIO***LE",
+    "branch": "main"
+  },
+  {
+    "repo": "datamill-co/target-redshift",
+    "path": ".env-EXAMPLE",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "datamill-co/target-snowflake",
+    "path": ".env-EXAMPLE",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "binxio/serverless-cfnflip",
+    "path": ".env.private.sample",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "akalaric/agentic-S3",
+    "path": ".env_example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "desplega-ai/agent-fs",
+    "path": ".env.production.example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "BauplanLabs/querying-everything-everywhere-all-at-once",
+    "path": "local.env.example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "OpenBankProject/TEuro",
+    "path": "airnode-package/airnode/aws.env.sample",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "electron-rare/mascarade",
+    "path": ".env.trials.template",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "diego3g/umbriel",
+    "path": ".env.local.example",
+    "label": "AWS",
+    "verdict": "REAL",
+    "secret": "AKIAQF***5C",
+    "branch": "master"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-public-api",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-metadata-service",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/ingress-controller-waf",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-redis",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-sendgrid",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-workers",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-mysql",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-forward-proxy",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-appserver",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "0x73746F66/trivialsec-elasticsearch",
+    "path": ".env-example",
+    "label": "AWS",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "gm3dmo/the-power",
+    "path": "setup.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "php/web-downloads",
+    "path": "API.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "CatREFuse/cls-certify",
+    "path": "SKILL.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "motionbug/detaartenfabriek",
+    "path": "API.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ZainulabdeenOfficial/github-language-stats-card-main",
+    "path": "learn.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "bethington/re-universe",
+    "path": "TODO.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "valinorintelligence/Gridwolf",
+    "path": "log.txt",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Nirmalkoswatta/Monitoring-Dashboard",
+    "path": "SETUP.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ashlrai/phantom-secrets",
+    "path": "codex.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "dsifry/goodtogo",
+    "path": "USAGE.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "tinabme/up-wrytr",
+    "path": "SETUP.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Andy-Aranda/pr-reviewer",
+    "path": "README.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "awpbash/awesome-ai-tracker",
+    "path": "SETUP.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "prithvi471/opensoirceor",
+    "path": "TRUST.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "US-SPURS/CAROMAR",
+    "path": "API.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "UniversalStandards/CAROMAR",
+    "path": "API.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "cbuchert/tool-club",
+    "path": "MCP.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "jolynt24/tech-learning-repo",
+    "path": "scan.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "nikrich/hungry-ghost-hive",
+    "path": "SPEC.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "JamesShi96/safe-push",
+    "path": "SKILL.md",
+    "label": "GitHubPAT",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "robusta-dev/kubewatch",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "looker/lookerbot",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "slack-samples/bolt-js-reacjilator",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "coleam00/remote-agentic-coding-system",
+    "path": "CLAUDE.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "sooperset/mcp-client-slackbot",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "symfony/slack-notifier",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "elastic/supply-chain-monitor",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "status-im/status-github-bot",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "rh-aiservices-bu/rhai-agentic-demo",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "helmcode/bender",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "tag1consulting/tag1bot",
+    "path": "INFRA.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "coollabsio/openclaw",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "atlanhq/argopm",
+    "path": "CLAUDE.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "masuidrive/slack-summarizer",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "gathering/loggy",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "gobridge/gopherbot",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "girliemac/slack-httpstatuscats",
+    "path": "diff.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "hackclub/journeybook",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "MasterworksIO/action-slacksync",
+    "path": "README.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "luqmanoop/sync-dotenv-slack",
+    "path": "readme.md",
+    "label": "Slack",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "DharunKumar-G/mindvault-semanticlinking",
+    "path": "ENV.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "gabrieltetz/JSOwned",
+    "path": "key.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "hoangnb24/mcp-code-mode",
+    "path": "plan.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "nuggetenak/nugget-nihongo",
+    "path": "SETUP.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "marz-hunter/kontools",
+    "path": "e.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Rafael-Martins-Paiva/bioscan-backend",
+    "path": "p.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "lidzmarjaradi-glitch/ssc-elearning-platform",
+    "path": "ss.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "TonyVM/qa-assistant",
+    "path": "DEMO.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "abhijeetkakade1234/PROMPT-WARS",
+    "path": "KEYS.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Ramavo22/gestion",
+    "path": "Note.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Collectorscanyon/Poly-edge",
+    "path": "env.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "katarikapil/IntelliSQL-Intelligent-SQL-Querying-with-LLMs-Using-Gemini-Pro",
+    "path": "env.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ca0s/gitgrep",
+    "path": "res.txt",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Juan-Severiano/Video-Transcriber",
+    "path": "USAGE.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "dennisdevulder/ltm",
+    "path": "SPEC.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "caffeinepub/local-eyes",
+    "path": "spec.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Ruhal-Doshi/hld-bench",
+    "path": "PLAN.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ENZO7700/seo4websk",
+    "path": "vps.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "DatanoiseTV/aigateway",
+    "path": "SPEC.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "HiteshGorana/agent-brain",
+    "path": "usage.md",
+    "label": "Google",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "h33tlit/secret-regex-list",
+    "path": "README.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "vinkius-labs/mcpfusion",
+    "path": "llms.txt",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "nullfuzz-pentest/regex-list",
+    "path": "readme.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "unclecode/crawl4ai-cloud-sdk",
+    "path": "PLAN.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "clerk/protect-cli",
+    "path": "CLAUDE.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "progrmoiz/stripe-pulse",
+    "path": "SKILL.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "s4nj1th/secr-cli",
+    "path": "RULES.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "GeoAziz/nova-ai-offline-assistant",
+    "path": "DEV.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "rattinas/OpenWhispr",
+    "path": "TODO.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Aitherium/aither-adk",
+    "path": "llms.txt",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "satheesh18/paarvai-mcp",
+    "path": "SETUP.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "vtemian/sisif-ai-mcp",
+    "path": "USAGE.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "solidafy/solidafy-cdk",
+    "path": "llm.txt",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Createya-ai/createya-docs",
+    "path": "index.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "autoworks-ai/autovault-website",
+    "path": "AGENTS.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "lincolncommercialsolutions/secret-scanner",
+    "path": "info.txt",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "blendflare/blendflare-python-sdk",
+    "path": "README.MD",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "LoriensLibrary/cama",
+    "path": "API.md",
+    "label": "Stripe",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ideawu/Objective-C-RSA",
+    "path": "README.md",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "spesmilo/electrum-docs",
+    "path": "ssl.rst",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "antonscheffer/as_crypto",
+    "path": "jwt.md",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "vikingmute/better-wechatpay",
+    "path": "llms.txt",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "wunderwuzzi23/scratch",
+    "path": "creds.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "jesusgavancho/TryHackMe_and_HackTheBox",
+    "path": "Ra 2.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "okta/okta-sdk-python",
+    "path": "README.md",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "RishiBakshii/mern-chat-app",
+    "path": "readme.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "arcVaishali/stellar-vision",
+    "path": "text.txt",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "RamonPage/ex_azure_key_vault",
+    "path": "DOCS.md",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "by-pinja/pdf-storage",
+    "path": "Readme.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "master"
+  },
+  {
+    "repo": "csrsm/go-proxy",
+    "path": "pk.txt",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "lufia/til",
+    "path": "fcm.rst",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "limseang/film_api_new",
+    "path": "key.txt",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "DukeEmree/series-tracker-v2",
+    "path": "LEARN.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "webdevtodayjason/changereq",
+    "path": "env.txt",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "Parallelia/criptocracia",
+    "path": "CLAUDE.md",
+    "label": "PEMkey",
+    "verdict": "FAKE",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "gauthieralfa/ep2510",
+    "path": "Priv.txt",
+    "label": "PEMkey",
+    "verdict": "REAL",
+    "secret": "-----B***--",
+    "branch": "main"
+  },
+  {
+    "repo": "devflowinc/trieve",
+    "path": ".env.server",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "c0sogi/LLMChat",
+    "path": ".env-sample",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "itl-ed/llm-dp",
+    "path": ".env.draft",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "wwsheng009/yao-amis-admin",
+    "path": ".env.redis",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "justlovemaki/openclaw-china-docker",
+    "path": ".env.minimal",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "joshuasundance-swca/langchain-streamlit-demo",
+    "path": ".env-example",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "ahmedmusawir/ts-node-langchain-openai-v1-2023",
+    "path": ".env.example.txt",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "t3rn/plugin-t3rn-executor",
+    "path": ".envrc",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "treescape-io/treescape",
+    "path": ".env.dist",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "iammm0/secbot",
+    "path": ".env.backup",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "Olamide-png/esw.know",
+    "path": "docker/README.env.md",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "rondagdag/ai-agents-js",
+    "path": ".env sample",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "otbpro/sendrick96",
+    "path": ".env.txt",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "ollehbom/AID",
+    "path": ".env.README.md",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "abhiaiyer91/wit",
+    "path": ".env.railway",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "NicolasR2/open-notebook-aws-deploy",
+    "path": "config.env",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "master"
+  },
+  {
+    "repo": "N30012000/airops-pro",
+    "path": ".env.template.txt",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "limitcantcode/jaison-core",
+    "path": ".env-template",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  },
+  {
+    "repo": "Sushma1912/job-recommender-app",
+    "path": "data/job_postings.env.txt",
+    "label": "OpenAI",
+    "verdict": "NO_MATCH",
+    "secret": null,
+    "branch": "main"
+  }
+]

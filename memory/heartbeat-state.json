@@ -1,0 +1,12 @@
+{
+  "lastChecks": {
+    "email": 1784154103,
+    "calendar": 1784154103,
+    "weather": 1784154103,
+    "mentions": 1784154103,
+    "pollyreach": 1784154103,
+    "memoryMaintenance": 1784125158,
+    "gateway": 1784125158
+  },
+  "notes": "2026-07-15 22:20Z heartbeat: sem novidade. email gmail_loop 0 novos (22:20). calendar/social nao config. pollyreach sem token (cego). weather: noite, irrelevant p/ sair. cron: jobs ok. healthcheck 22:00 Infra OK (docker 6/6, nginx 4/4). nada urgente."
+}

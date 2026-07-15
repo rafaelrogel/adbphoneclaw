@@ -1,0 +1,401 @@
+n,estilo,file,asset_path,legenda
+1,1,galeria_0001_estilo1.png,assets/galeria_0001_estilo1.png,No WhatsApp que você já tem aberto agora.
+2,2,galeria_0002_estilo2.png,assets/galeria_0002_estilo2.png,Bem-vindo ao Zappelin. 🌐
+3,3,galeria_0003_estilo3.png,assets/galeria_0003_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+4,1,galeria_0004_estilo1.png,assets/galeria_0004_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+5,2,galeria_0005_estilo2.png,assets/galeria_0005_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+6,3,galeria_0006_estilo3.png,assets/galeria_0006_estilo3.png,Do neurônio pro chat — sem atrito.
+7,1,galeria_0007_estilo1.png,assets/galeria_0007_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+8,2,galeria_0008_estilo2.png,assets/galeria_0008_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+9,3,galeria_0009_estilo3.png,assets/galeria_0009_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+10,1,galeria_0010_estilo1.png,assets/galeria_0010_estilo1.png,Menos “perdi o horário” e mais “já tô na call”.
+11,2,galeria_0011_estilo2.png,assets/galeria_0011_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+12,3,galeria_0012_estilo3.png,assets/galeria_0012_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+13,1,galeria_0013_estilo1.png,assets/galeria_0013_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+14,2,galeria_0014_estilo2.png,assets/galeria_0014_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+15,3,galeria_0015_estilo3.png,assets/galeria_0015_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+16,1,galeria_0016_estilo1.png,assets/galeria_0016_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+17,2,galeria_0017_estilo2.png,assets/galeria_0017_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+18,3,galeria_0018_estilo3.png,assets/galeria_0018_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+19,1,galeria_0019_estilo1.png,assets/galeria_0019_estilo1.png,No WhatsApp que você já tem aberto agora.
+20,2,galeria_0020_estilo2.png,assets/galeria_0020_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+21,3,galeria_0021_estilo3.png,assets/galeria_0021_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+22,1,galeria_0022_estilo1.png,assets/galeria_0022_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+23,2,galeria_0023_estilo2.png,assets/galeria_0023_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+24,3,galeria_0024_estilo3.png,assets/galeria_0024_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+25,1,galeria_0025_estilo1.png,assets/galeria_0025_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+26,2,galeria_0026_estilo2.png,assets/galeria_0026_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+27,3,galeria_0027_estilo3.png,assets/galeria_0027_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+28,1,galeria_0028_estilo1.png,assets/galeria_0028_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+29,2,galeria_0029_estilo2.png,assets/galeria_0029_estilo2.png,Simples assim. ✨
+30,3,galeria_0030_estilo3.png,assets/galeria_0030_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+31,1,galeria_0031_estilo1.png,assets/galeria_0031_estilo1.png,"Do neurônio pro chat — sem atrito, sem formatação obrigatória."
+32,2,galeria_0032_estilo2.png,assets/galeria_0032_estilo2.png,Bem-vindo ao Zappelin. 🌐
+33,3,galeria_0033_estilo3.png,assets/galeria_0033_estilo3.png,Do neurônio pro chat — sem atrito.
+34,1,galeria_0034_estilo1.png,assets/galeria_0034_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+35,2,galeria_0035_estilo2.png,assets/galeria_0035_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+36,3,galeria_0036_estilo3.png,assets/galeria_0036_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+37,1,galeria_0037_estilo1.png,assets/galeria_0037_estilo1.png,"Manda na hora que vier. Quando você precisar de novo, ela tá lá, esperando."
+38,2,galeria_0038_estilo2.png,assets/galeria_0038_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+39,3,galeria_0039_estilo3.png,assets/galeria_0039_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+40,1,galeria_0040_estilo1.png,assets/galeria_0040_estilo1.png,Tudo num chat. Nada novo pra aprender.
+41,2,galeria_0041_estilo2.png,assets/galeria_0041_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+42,3,galeria_0042_estilo3.png,assets/galeria_0042_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+43,1,galeria_0043_estilo1.png,assets/galeria_0043_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+44,2,galeria_0044_estilo2.png,assets/galeria_0044_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+45,3,galeria_0045_estilo3.png,assets/galeria_0045_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+46,1,galeria_0046_estilo1.png,assets/galeria_0046_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+47,2,galeria_0047_estilo2.png,assets/galeria_0047_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+48,3,galeria_0048_estilo3.png,assets/galeria_0048_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+49,1,galeria_0049_estilo1.png,assets/galeria_0049_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+50,2,galeria_0050_estilo2.png,assets/galeria_0050_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+51,3,galeria_0051_estilo3.png,assets/galeria_0051_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+52,1,galeria_0052_estilo1.png,assets/galeria_0052_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+53,2,galeria_0053_estilo2.png,assets/galeria_0053_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+54,3,galeria_0054_estilo3.png,assets/galeria_0054_estilo3.png,Do neurônio pro chat — sem atrito.
+55,1,galeria_0055_estilo1.png,assets/galeria_0055_estilo1.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+56,2,galeria_0056_estilo2.png,assets/galeria_0056_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+57,3,galeria_0057_estilo3.png,assets/galeria_0057_estilo3.png,Do neurônio pro chat — sem atrito.
+58,1,galeria_0058_estilo1.png,assets/galeria_0058_estilo1.png,"Quando a mente desliga, alguém tem que lembrar do leite. Spoiler: sou eu."
+59,2,galeria_0059_estilo2.png,assets/galeria_0059_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+60,3,galeria_0060_estilo3.png,assets/galeria_0060_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+61,1,galeria_0061_estilo1.png,assets/galeria_0061_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda aqui e respira.
+62,2,galeria_0062_estilo2.png,assets/galeria_0062_estilo2.png,Sem tutorial. Só escrever. ✨
+63,3,galeria_0063_estilo3.png,assets/galeria_0063_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+64,1,galeria_0064_estilo1.png,assets/galeria_0064_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+65,2,galeria_0065_estilo2.png,assets/galeria_0065_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+66,3,galeria_0066_estilo3.png,assets/galeria_0066_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+67,1,galeria_0067_estilo1.png,assets/galeria_0067_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+68,2,galeria_0068_estilo2.png,assets/galeria_0068_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+69,3,galeria_0069_estilo3.png,assets/galeria_0069_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+70,1,galeria_0070_estilo1.png,assets/galeria_0070_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+71,2,galeria_0071_estilo2.png,assets/galeria_0071_estilo2.png,Sem tutorial. Só escrever. ✨
+72,3,galeria_0072_estilo3.png,assets/galeria_0072_estilo3.png,Do neurônio pro chat — sem atrito.
+73,1,galeria_0073_estilo1.png,assets/galeria_0073_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+74,2,galeria_0074_estilo2.png,assets/galeria_0074_estilo2.png,Sem tutorial. Só escrever. ✨
+75,3,galeria_0075_estilo3.png,assets/galeria_0075_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+76,1,galeria_0076_estilo1.png,assets/galeria_0076_estilo1.png,"Do neurônio pro chat — sem atrito, sem formatação obrigatória."
+77,2,galeria_0077_estilo2.png,assets/galeria_0077_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+78,3,galeria_0078_estilo3.png,assets/galeria_0078_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+79,1,galeria_0079_estilo1.png,assets/galeria_0079_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+80,2,galeria_0080_estilo2.png,assets/galeria_0080_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+81,3,galeria_0081_estilo3.png,assets/galeria_0081_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+82,1,galeria_0082_estilo1.png,assets/galeria_0082_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+83,2,galeria_0083_estilo2.png,assets/galeria_0083_estilo2.png,Simples assim. ✨
+84,3,galeria_0084_estilo3.png,assets/galeria_0084_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+85,1,galeria_0085_estilo1.png,assets/galeria_0085_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda aqui e respira.
+86,2,galeria_0086_estilo2.png,assets/galeria_0086_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+87,3,galeria_0087_estilo3.png,assets/galeria_0087_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+88,1,galeria_0088_estilo1.png,assets/galeria_0088_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+89,2,galeria_0089_estilo2.png,assets/galeria_0089_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+90,3,galeria_0090_estilo3.png,assets/galeria_0090_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+91,1,galeria_0091_estilo1.png,assets/galeria_0091_estilo1.png,Tudo num chat. Nada novo pra aprender.
+92,2,galeria_0092_estilo2.png,assets/galeria_0092_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+93,3,galeria_0093_estilo3.png,assets/galeria_0093_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+94,1,galeria_0094_estilo1.png,assets/galeria_0094_estilo1.png,"Sem app pra baixar, sem cadastro infinito. É só conversa, no app que você já abre sem parar."
+95,2,galeria_0095_estilo2.png,assets/galeria_0095_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+96,3,galeria_0096_estilo3.png,assets/galeria_0096_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+97,1,galeria_0097_estilo1.png,assets/galeria_0097_estilo1.png,Menos “perdi o horário” e mais “já tô na call”.
+98,2,galeria_0098_estilo2.png,assets/galeria_0098_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+99,3,galeria_0099_estilo3.png,assets/galeria_0099_estilo3.png,Do neurônio pro chat — sem atrito.
+100,1,galeria_0100_estilo1.png,assets/galeria_0100_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+101,2,galeria_0101_estilo2.png,assets/galeria_0101_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+102,3,galeria_0102_estilo3.png,assets/galeria_0102_estilo3.png,Do neurônio pro chat — sem atrito.
+103,1,galeria_0103_estilo1.png,assets/galeria_0103_estilo1.png,Quinta é o novo segunda. Mas o Zappelin lembra mesmo assim.
+104,2,galeria_0104_estilo2.png,assets/galeria_0104_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+105,3,galeria_0105_estilo3.png,assets/galeria_0105_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+106,1,galeria_0106_estilo1.png,assets/galeria_0106_estilo1.png,"A cabeça tá cheia, a gente entende. Manda no WhatsApp que o Zappelin guarda pra você."
+107,2,galeria_0107_estilo2.png,assets/galeria_0107_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+108,3,galeria_0108_estilo3.png,assets/galeria_0108_estilo3.png,Do neurônio pro chat — sem atrito.
+109,1,galeria_0109_estilo1.png,assets/galeria_0109_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+110,2,galeria_0110_estilo2.png,assets/galeria_0110_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+111,3,galeria_0111_estilo3.png,assets/galeria_0111_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+112,1,galeria_0112_estilo1.png,assets/galeria_0112_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+113,2,galeria_0113_estilo2.png,assets/galeria_0113_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+114,3,galeria_0114_estilo3.png,assets/galeria_0114_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+115,1,galeria_0115_estilo1.png,assets/galeria_0115_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+116,2,galeria_0116_estilo2.png,assets/galeria_0116_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+117,3,galeria_0117_estilo3.png,assets/galeria_0117_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+118,1,galeria_0118_estilo1.png,assets/galeria_0118_estilo1.png,"Quando a mente desliga, alguém tem que lembrar do leite. Spoiler: sou eu."
+119,2,galeria_0119_estilo2.png,assets/galeria_0119_estilo2.png,Bem-vindo ao Zappelin. 🌐
+120,3,galeria_0120_estilo3.png,assets/galeria_0120_estilo3.png,Do neurônio pro chat — sem atrito.
+121,1,galeria_0121_estilo1.png,assets/galeria_0121_estilo1.png,"Quando a mente desliga, alguém tem que lembrar do leite. Spoiler: sou eu."
+122,2,galeria_0122_estilo2.png,assets/galeria_0122_estilo2.png,Simples assim. ✨
+123,3,galeria_0123_estilo3.png,assets/galeria_0123_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+124,1,galeria_0124_estilo1.png,assets/galeria_0124_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda pra mim e respira.
+125,2,galeria_0125_estilo2.png,assets/galeria_0125_estilo2.png,Bem-vindo ao Zappelin. 🌐
+126,3,galeria_0126_estilo3.png,assets/galeria_0126_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+127,1,galeria_0127_estilo1.png,assets/galeria_0127_estilo1.png,"Manda na hora que vier. Quando você precisar de novo, ela tá lá, esperando."
+128,2,galeria_0128_estilo2.png,assets/galeria_0128_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+129,3,galeria_0129_estilo3.png,assets/galeria_0129_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+130,1,galeria_0130_estilo1.png,assets/galeria_0130_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+131,2,galeria_0131_estilo2.png,assets/galeria_0131_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+132,3,galeria_0132_estilo3.png,assets/galeria_0132_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+133,1,galeria_0133_estilo1.png,assets/galeria_0133_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+134,2,galeria_0134_estilo2.png,assets/galeria_0134_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+135,3,galeria_0135_estilo3.png,assets/galeria_0135_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+136,1,galeria_0136_estilo1.png,assets/galeria_0136_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+137,2,galeria_0137_estilo2.png,assets/galeria_0137_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+138,3,galeria_0138_estilo3.png,assets/galeria_0138_estilo3.png,Do neurônio pro chat — sem atrito.
+139,1,galeria_0139_estilo1.png,assets/galeria_0139_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+140,2,galeria_0140_estilo2.png,assets/galeria_0140_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+141,3,galeria_0141_estilo3.png,assets/galeria_0141_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+142,1,galeria_0142_estilo1.png,assets/galeria_0142_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+143,2,galeria_0143_estilo2.png,assets/galeria_0143_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+144,3,galeria_0144_estilo3.png,assets/galeria_0144_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+145,1,galeria_0145_estilo1.png,assets/galeria_0145_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+146,2,galeria_0146_estilo2.png,assets/galeria_0146_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+147,3,galeria_0147_estilo3.png,assets/galeria_0147_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+148,1,galeria_0148_estilo1.png,assets/galeria_0148_estilo1.png,"A cabeça tá cheia, a gente entende. Manda no chat que o Zappelin guarda pra você."
+149,2,galeria_0149_estilo2.png,assets/galeria_0149_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+150,3,galeria_0150_estilo3.png,assets/galeria_0150_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+151,1,galeria_0151_estilo1.png,assets/galeria_0151_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+152,2,galeria_0152_estilo2.png,assets/galeria_0152_estilo2.png,Sem tutorial. Só escrever. ✨
+153,3,galeria_0153_estilo3.png,assets/galeria_0153_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+154,1,galeria_0154_estilo1.png,assets/galeria_0154_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+155,2,galeria_0155_estilo2.png,assets/galeria_0155_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+156,3,galeria_0156_estilo3.png,assets/galeria_0156_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+157,1,galeria_0157_estilo1.png,assets/galeria_0157_estilo1.png,"Eu entendo lembretes, listas, ideias e compromissos do jeito que você fala."
+158,2,galeria_0158_estilo2.png,assets/galeria_0158_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+159,3,galeria_0159_estilo3.png,assets/galeria_0159_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+160,1,galeria_0160_estilo1.png,assets/galeria_0160_estilo1.png,Menos “perdi o horário” e mais “já tô na call”.
+161,2,galeria_0161_estilo2.png,assets/galeria_0161_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+162,3,galeria_0162_estilo3.png,assets/galeria_0162_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+163,1,galeria_0163_estilo1.png,assets/galeria_0163_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+164,2,galeria_0164_estilo2.png,assets/galeria_0164_estilo2.png,Simples assim. ✨
+165,3,galeria_0165_estilo3.png,assets/galeria_0165_estilo3.png,Do neurônio pro chat — sem atrito.
+166,1,galeria_0166_estilo1.png,assets/galeria_0166_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+167,2,galeria_0167_estilo2.png,assets/galeria_0167_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+168,3,galeria_0168_estilo3.png,assets/galeria_0168_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+169,1,galeria_0169_estilo1.png,assets/galeria_0169_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+170,2,galeria_0170_estilo2.png,assets/galeria_0170_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+171,3,galeria_0171_estilo3.png,assets/galeria_0171_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+172,1,galeria_0172_estilo1.png,assets/galeria_0172_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+173,2,galeria_0173_estilo2.png,assets/galeria_0173_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+174,3,galeria_0174_estilo3.png,assets/galeria_0174_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+175,1,galeria_0175_estilo1.png,assets/galeria_0175_estilo1.png,Quinta é o novo segunda. Mas o Zappelin lembra mesmo assim.
+176,2,galeria_0176_estilo2.png,assets/galeria_0176_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+177,3,galeria_0177_estilo3.png,assets/galeria_0177_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+178,1,galeria_0178_estilo1.png,assets/galeria_0178_estilo1.png,"Quando a mente desliga, alguém tem que lembrar do leite. Spoiler: sou eu."
+179,2,galeria_0179_estilo2.png,assets/galeria_0179_estilo2.png,Simples assim. ✨
+180,3,galeria_0180_estilo3.png,assets/galeria_0180_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+181,1,galeria_0181_estilo1.png,assets/galeria_0181_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+182,2,galeria_0182_estilo2.png,assets/galeria_0182_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+183,3,galeria_0183_estilo3.png,assets/galeria_0183_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+184,1,galeria_0184_estilo1.png,assets/galeria_0184_estilo1.png,Tudo num chat. Nada novo pra aprender.
+185,2,galeria_0185_estilo2.png,assets/galeria_0185_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+186,3,galeria_0186_estilo3.png,assets/galeria_0186_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+187,1,galeria_0187_estilo1.png,assets/galeria_0187_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+188,2,galeria_0188_estilo2.png,assets/galeria_0188_estilo2.png,Sem tutorial. Só escrever. ✨
+189,3,galeria_0189_estilo3.png,assets/galeria_0189_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+190,1,galeria_0190_estilo1.png,assets/galeria_0190_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+191,2,galeria_0191_estilo2.png,assets/galeria_0191_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+192,3,galeria_0192_estilo3.png,assets/galeria_0192_estilo3.png,Do neurônio pro chat — sem atrito.
+193,1,galeria_0193_estilo1.png,assets/galeria_0193_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+194,2,galeria_0194_estilo2.png,assets/galeria_0194_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+195,3,galeria_0195_estilo3.png,assets/galeria_0195_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+196,1,galeria_0196_estilo1.png,assets/galeria_0196_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+197,2,galeria_0197_estilo2.png,assets/galeria_0197_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+198,3,galeria_0198_estilo3.png,assets/galeria_0198_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+199,1,galeria_0199_estilo1.png,assets/galeria_0199_estilo1.png,Manda na hora que vier que eu guardo até quando você esquecer que esqueceu.
+200,2,galeria_0200_estilo2.png,assets/galeria_0200_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+201,3,galeria_0201_estilo3.png,assets/galeria_0201_estilo3.png,Do neurônio pro chat — sem atrito.
+202,1,galeria_0202_estilo1.png,assets/galeria_0202_estilo1.png,"Eu entendo lembretes, listas, ideias e compromissos do jeito que você fala."
+203,2,galeria_0203_estilo2.png,assets/galeria_0203_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+204,3,galeria_0204_estilo3.png,assets/galeria_0204_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+205,1,galeria_0205_estilo1.png,assets/galeria_0205_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+206,2,galeria_0206_estilo2.png,assets/galeria_0206_estilo2.png,Sem tutorial. Só escrever. ✨
+207,3,galeria_0207_estilo3.png,assets/galeria_0207_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+208,1,galeria_0208_estilo1.png,assets/galeria_0208_estilo1.png,"Do neurônio pro chat — sem atrito, sem formatação obrigatória."
+209,2,galeria_0209_estilo2.png,assets/galeria_0209_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+210,3,galeria_0210_estilo3.png,assets/galeria_0210_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+211,1,galeria_0211_estilo1.png,assets/galeria_0211_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+212,2,galeria_0212_estilo2.png,assets/galeria_0212_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+213,3,galeria_0213_estilo3.png,assets/galeria_0213_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+214,1,galeria_0214_estilo1.png,assets/galeria_0214_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+215,2,galeria_0215_estilo2.png,assets/galeria_0215_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+216,3,galeria_0216_estilo3.png,assets/galeria_0216_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+217,1,galeria_0217_estilo1.png,assets/galeria_0217_estilo1.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+218,2,galeria_0218_estilo2.png,assets/galeria_0218_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+219,3,galeria_0219_estilo3.png,assets/galeria_0219_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+220,1,galeria_0220_estilo1.png,assets/galeria_0220_estilo1.png,"Eu entendo lembretes, listas, ideias e compromissos do jeito que você fala."
+221,2,galeria_0221_estilo2.png,assets/galeria_0221_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+222,3,galeria_0222_estilo3.png,assets/galeria_0222_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+223,1,galeria_0223_estilo1.png,assets/galeria_0223_estilo1.png,Quinta é o novo segunda. Mas o Zappelin lembra mesmo assim.
+224,2,galeria_0224_estilo2.png,assets/galeria_0224_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+225,3,galeria_0225_estilo3.png,assets/galeria_0225_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+226,1,galeria_0226_estilo1.png,assets/galeria_0226_estilo1.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+227,2,galeria_0227_estilo2.png,assets/galeria_0227_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+228,3,galeria_0228_estilo3.png,assets/galeria_0228_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+229,1,galeria_0229_estilo1.png,assets/galeria_0229_estilo1.png,"Quando a mente desliga, alguém tem que lembrar do leite. Spoiler: sou eu."
+230,2,galeria_0230_estilo2.png,assets/galeria_0230_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+231,3,galeria_0231_estilo3.png,assets/galeria_0231_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+232,1,galeria_0232_estilo1.png,assets/galeria_0232_estilo1.png,"Eu entendo lembretes, listas, ideias e compromissos do jeito que você fala."
+233,2,galeria_0233_estilo2.png,assets/galeria_0233_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+234,3,galeria_0234_estilo3.png,assets/galeria_0234_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+235,1,galeria_0235_estilo1.png,assets/galeria_0235_estilo1.png,No WhatsApp que você já tem aberto agora.
+236,2,galeria_0236_estilo2.png,assets/galeria_0236_estilo2.png,Bem-vindo ao Zappelin. 🌐
+237,3,galeria_0237_estilo3.png,assets/galeria_0237_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+238,1,galeria_0238_estilo1.png,assets/galeria_0238_estilo1.png,Soltar o que não precisa estar na cabeça é o primeiro passo de uma rotina mais leve.
+239,2,galeria_0239_estilo2.png,assets/galeria_0239_estilo2.png,Simples assim. ✨
+240,3,galeria_0240_estilo3.png,assets/galeria_0240_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+241,1,galeria_0241_estilo1.png,assets/galeria_0241_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+242,2,galeria_0242_estilo2.png,assets/galeria_0242_estilo2.png,Acorda sem aquela sensação de “tinha algo importante…”. ✅
+243,3,galeria_0243_estilo3.png,assets/galeria_0243_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+244,1,galeria_0244_estilo1.png,assets/galeria_0244_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+245,2,galeria_0245_estilo2.png,assets/galeria_0245_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+246,3,galeria_0246_estilo3.png,assets/galeria_0246_estilo3.png,Eu seguro as pontas soltas enquanto você respira.
+247,1,galeria_0247_estilo1.png,assets/galeria_0247_estilo1.png,"Você fala, eu organizo. Tipo um sócio digital que nunca esquece nada."
+248,2,galeria_0248_estilo2.png,assets/galeria_0248_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+249,3,galeria_0249_estilo3.png,assets/galeria_0249_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+250,1,galeria_0250_estilo1.png,assets/galeria_0250_estilo1.png,Quinta é o novo segunda. Mas o Zappelin lembra mesmo assim.
+251,2,galeria_0251_estilo2.png,assets/galeria_0251_estilo2.png,Bem-vindo ao Zappelin. 🌐
+252,3,galeria_0252_estilo3.png,assets/galeria_0252_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+253,1,galeria_0253_estilo1.png,assets/galeria_0253_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+254,2,galeria_0254_estilo2.png,assets/galeria_0254_estilo2.png,Sem tutorial. Só escrever. ✨
+255,3,galeria_0255_estilo3.png,assets/galeria_0255_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+256,1,galeria_0256_estilo1.png,assets/galeria_0256_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+257,2,galeria_0257_estilo2.png,assets/galeria_0257_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+258,3,galeria_0258_estilo3.png,assets/galeria_0258_estilo3.png,Do neurônio pro chat — sem atrito.
+259,1,galeria_0259_estilo1.png,assets/galeria_0259_estilo1.png,Menos “perdi o horário” e mais “já tô na call”.
+260,2,galeria_0260_estilo2.png,assets/galeria_0260_estilo2.png,Simples assim. ✨
+261,3,galeria_0261_estilo3.png,assets/galeria_0261_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+262,1,galeria_0262_estilo1.png,assets/galeria_0262_estilo1.png,Manda na hora que vier que eu guardo até quando você esquecer que esqueceu.
+263,2,galeria_0263_estilo2.png,assets/galeria_0263_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+264,3,galeria_0264_estilo3.png,assets/galeria_0264_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+265,1,galeria_0265_estilo1.png,assets/galeria_0265_estilo1.png,"A cabeça tá cheia, a gente entende. Manda no chat que o Zappelin guarda pra você."
+266,2,galeria_0266_estilo2.png,assets/galeria_0266_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+267,3,galeria_0267_estilo3.png,assets/galeria_0267_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+268,1,galeria_0268_estilo1.png,assets/galeria_0268_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+269,2,galeria_0269_estilo2.png,assets/galeria_0269_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+270,3,galeria_0270_estilo3.png,assets/galeria_0270_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+271,1,galeria_0271_estilo1.png,assets/galeria_0271_estilo1.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+272,2,galeria_0272_estilo2.png,assets/galeria_0272_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+273,3,galeria_0273_estilo3.png,assets/galeria_0273_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+274,1,galeria_0274_estilo1.png,assets/galeria_0274_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda no chat e respira.
+275,2,galeria_0275_estilo2.png,assets/galeria_0275_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+276,3,galeria_0276_estilo3.png,assets/galeria_0276_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+277,1,galeria_0277_estilo1.png,assets/galeria_0277_estilo1.png,"Sem app pra baixar, sem cadastro infinito. É só conversa, no aplicativo que você já abre sem parar."
+278,2,galeria_0278_estilo2.png,assets/galeria_0278_estilo2.png,Acorda sem aquela sensação de “tinha algo importante…”. ✅
+279,3,galeria_0279_estilo3.png,assets/galeria_0279_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+280,1,galeria_0280_estilo1.png,assets/galeria_0280_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+281,2,galeria_0281_estilo2.png,assets/galeria_0281_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+282,3,galeria_0282_estilo3.png,assets/galeria_0282_estilo3.png,Do neurônio pro chat — sem atrito.
+283,1,galeria_0283_estilo1.png,assets/galeria_0283_estilo1.png,Manda na hora que vier que eu guardo até quando você esquecer que esqueceu.
+284,2,galeria_0284_estilo2.png,assets/galeria_0284_estilo2.png,Simples assim. ✨
+285,3,galeria_0285_estilo3.png,assets/galeria_0285_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+286,1,galeria_0286_estilo1.png,assets/galeria_0286_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+287,2,galeria_0287_estilo2.png,assets/galeria_0287_estilo2.png,Simples assim. ✨
+288,3,galeria_0288_estilo3.png,assets/galeria_0288_estilo3.png,Do neurônio pro chat — sem atrito.
+289,1,galeria_0289_estilo1.png,assets/galeria_0289_estilo1.png,Quinta é o novo segunda. Mas o Zappelin lembra mesmo assim.
+290,2,galeria_0290_estilo2.png,assets/galeria_0290_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+291,3,galeria_0291_estilo3.png,assets/galeria_0291_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+292,1,galeria_0292_estilo1.png,assets/galeria_0292_estilo1.png,"É só isso mesmo. Sem cadastro, sem app, sem enrolação."
+293,2,galeria_0293_estilo2.png,assets/galeria_0293_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+294,3,galeria_0294_estilo3.png,assets/galeria_0294_estilo3.png,Você foca no que importa; eu cuido do resto nos bastidores.
+295,1,galeria_0295_estilo1.png,assets/galeria_0295_estilo1.png,Manda na hora que vier que eu guardo até quando você esquecer que esqueceu.
+296,2,galeria_0296_estilo2.png,assets/galeria_0296_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+297,3,galeria_0297_estilo3.png,assets/galeria_0297_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+298,1,galeria_0298_estilo1.png,assets/galeria_0298_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+299,2,galeria_0299_estilo2.png,assets/galeria_0299_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+300,3,galeria_0300_estilo3.png,assets/galeria_0300_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+301,1,galeria_0301_estilo1.png,assets/galeria_0301_estilo1.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+302,2,galeria_0302_estilo2.png,assets/galeria_0302_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+303,3,galeria_0303_estilo3.png,assets/galeria_0303_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+304,1,galeria_0304_estilo1.png,assets/galeria_0304_estilo1.png,"Menos apps abertos, mais coisas resolvidas. Tudo na conversa que você já tem na mão."
+305,2,galeria_0305_estilo2.png,assets/galeria_0305_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+306,3,galeria_0306_estilo3.png,assets/galeria_0306_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+307,1,galeria_0307_estilo1.png,assets/galeria_0307_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+308,2,galeria_0308_estilo2.png,assets/galeria_0308_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+309,3,galeria_0309_estilo3.png,assets/galeria_0309_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+310,1,galeria_0310_estilo1.png,assets/galeria_0310_estilo1.png,"A minha tá aqui, firme. Quando você quiser delegar, é só mandar."
+311,2,galeria_0311_estilo2.png,assets/galeria_0311_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+312,3,galeria_0312_estilo3.png,assets/galeria_0312_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+313,1,galeria_0313_estilo1.png,assets/galeria_0313_estilo1.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+314,2,galeria_0314_estilo2.png,assets/galeria_0314_estilo2.png,Sem tutorial. Só escrever. ✨
+315,3,galeria_0315_estilo3.png,assets/galeria_0315_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+316,1,galeria_0316_estilo1.png,assets/galeria_0316_estilo1.png,"A cabeça tá cheia, a gente entende. Manda no WhatsApp que o Zappelin guarda pra você."
+317,2,galeria_0317_estilo2.png,assets/galeria_0317_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+318,3,galeria_0318_estilo3.png,assets/galeria_0318_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+319,1,galeria_0319_estilo1.png,assets/galeria_0319_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+320,2,galeria_0320_estilo2.png,assets/galeria_0320_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+321,3,galeria_0321_estilo3.png,assets/galeria_0321_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+322,1,galeria_0322_estilo1.png,assets/galeria_0322_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+323,2,galeria_0323_estilo2.png,assets/galeria_0323_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+324,3,galeria_0324_estilo3.png,assets/galeria_0324_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+325,1,galeria_0325_estilo1.png,assets/galeria_0325_estilo1.png,"Do neurônio pro chat — sem atrito, sem formatação obrigatória."
+326,2,galeria_0326_estilo2.png,assets/galeria_0326_estilo2.png,Bem-vindo ao Zappelin. 🌐
+327,3,galeria_0327_estilo3.png,assets/galeria_0327_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+328,1,galeria_0328_estilo1.png,assets/galeria_0328_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+329,2,galeria_0329_estilo2.png,assets/galeria_0329_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+330,3,galeria_0330_estilo3.png,assets/galeria_0330_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+331,1,galeria_0331_estilo1.png,assets/galeria_0331_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+332,2,galeria_0332_estilo2.png,assets/galeria_0332_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+333,3,galeria_0333_estilo3.png,assets/galeria_0333_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+334,1,galeria_0334_estilo1.png,assets/galeria_0334_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda aqui e respira.
+335,2,galeria_0335_estilo2.png,assets/galeria_0335_estilo2.png,"Uma conversa pra lembrar, listar e organizar a vida toda. ✨"
+336,3,galeria_0336_estilo3.png,assets/galeria_0336_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+337,1,galeria_0337_estilo1.png,assets/galeria_0337_estilo1.png,Menos “perdi o horário” e mais “já tô na call”.
+338,2,galeria_0338_estilo2.png,assets/galeria_0338_estilo2.png,Simples assim. ✨
+339,3,galeria_0339_estilo3.png,assets/galeria_0339_estilo3.png,Menos “perdi o horário” e mais “já tô na call”.
+340,1,galeria_0340_estilo1.png,assets/galeria_0340_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+341,2,galeria_0341_estilo2.png,assets/galeria_0341_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+342,3,galeria_0342_estilo3.png,assets/galeria_0342_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+343,1,galeria_0343_estilo1.png,assets/galeria_0343_estilo1.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+344,2,galeria_0344_estilo2.png,assets/galeria_0344_estilo2.png,Sem tutorial. Só escrever. ✨
+345,3,galeria_0345_estilo3.png,assets/galeria_0345_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+346,1,galeria_0346_estilo1.png,assets/galeria_0346_estilo1.png,Eu lembro das datas chatas pra você só lembrar das coisas boas.
+347,2,galeria_0347_estilo2.png,assets/galeria_0347_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+348,3,galeria_0348_estilo3.png,assets/galeria_0348_estilo3.png,Do neurônio pro chat — sem atrito.
+349,1,galeria_0349_estilo1.png,assets/galeria_0349_estilo1.png,Você não precisa lembrar de tudo o tempo todo. Manda aqui e respira.
+350,2,galeria_0350_estilo2.png,assets/galeria_0350_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+351,3,galeria_0351_estilo3.png,assets/galeria_0351_estilo3.png,Do neurônio pro chat — sem atrito.
+352,1,galeria_0352_estilo1.png,assets/galeria_0352_estilo1.png,Tudo num chat. Nada novo pra aprender.
+353,2,galeria_0353_estilo2.png,assets/galeria_0353_estilo2.png,Simples assim. ✨
+354,3,galeria_0354_estilo3.png,assets/galeria_0354_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+355,1,galeria_0355_estilo1.png,assets/galeria_0355_estilo1.png,"Sem app pra baixar, sem cadastro infinito. É só conversa, no app que você já abre sem parar."
+356,2,galeria_0356_estilo2.png,assets/galeria_0356_estilo2.png,Acorda sem aquela sensação de “tinha algo importante…”. ✅
+357,3,galeria_0357_estilo3.png,assets/galeria_0357_estilo3.png,Você manda no chat; eu seguro o lembrete sem app novo. Manda aí.
+358,1,galeria_0358_estilo1.png,assets/galeria_0358_estilo1.png,Você carrega muita coisa por dia. Soltar um pouco também é cuidado.
+359,2,galeria_0359_estilo2.png,assets/galeria_0359_estilo2.png,"Quando teu cérebro pede pra abandonar o chat, a gente assume. 🫠"
+360,3,galeria_0360_estilo3.png,assets/galeria_0360_estilo3.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto.
+361,1,galeria_0361_estilo1.png,assets/galeria_0361_estilo1.png,Tudo num chat. Nada novo pra aprender.
+362,2,galeria_0362_estilo2.png,assets/galeria_0362_estilo2.png,Manda os itens conforme lembra. Eu junto tudo numa lista só. 📝
+363,3,galeria_0363_estilo3.png,assets/galeria_0363_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+364,1,galeria_0364_estilo1.png,assets/galeria_0364_estilo1.png,"A cabeça tá cheia, a gente entende. Manda no WhatsApp que o Zappelin guarda pra você."
+365,2,galeria_0365_estilo2.png,assets/galeria_0365_estilo2.png,Manda no Zappelin na hora do pânico. Eu devolvo com contexto. 🫠
+366,3,galeria_0366_estilo3.png,assets/galeria_0366_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+367,1,galeria_0367_estilo1.png,assets/galeria_0367_estilo1.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+368,2,galeria_0368_estilo2.png,assets/galeria_0368_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+369,3,galeria_0369_estilo3.png,assets/galeria_0369_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+370,1,galeria_0370_estilo1.png,assets/galeria_0370_estilo1.png,"É só isso mesmo. Sem cadastro, sem app, sem enrolação."
+371,2,galeria_0371_estilo2.png,assets/galeria_0371_estilo2.png,Você foca no que importa; eu cuido do resto nos bastidores. 🧠
+372,3,galeria_0372_estilo3.png,assets/galeria_0372_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+373,1,galeria_0373_estilo1.png,assets/galeria_0373_estilo1.png,"Sem app pra baixar, sem cadastro infinito. É só conversa, no aplicativo que você já abre sem parar."
+374,2,galeria_0374_estilo2.png,assets/galeria_0374_estilo2.png,E tá tudo bem. Existe um jeito mais leve de viver com isso. 💚
+375,3,galeria_0375_estilo3.png,assets/galeria_0375_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+376,1,galeria_0376_estilo1.png,assets/galeria_0376_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+377,2,galeria_0377_estilo2.png,assets/galeria_0377_estilo2.png,Sem tutorial. Só escrever. ✨
+378,3,galeria_0378_estilo3.png,assets/galeria_0378_estilo3.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+379,1,galeria_0379_estilo1.png,assets/galeria_0379_estilo1.png,Delegar lembrete não é preguiça — é espaço pra você respirar melhor.
+380,2,galeria_0380_estilo2.png,assets/galeria_0380_estilo2.png,Simples assim. ✨
+381,3,galeria_0381_estilo3.png,assets/galeria_0381_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+382,1,galeria_0382_estilo1.png,assets/galeria_0382_estilo1.png,"Você manda mensagem natural, eu organizo nos bastidores."
+383,2,galeria_0383_estilo2.png,assets/galeria_0383_estilo2.png,"Memória, agenda e listas — tudo onde você já passa o dia. 🌐"
+384,3,galeria_0384_estilo3.png,assets/galeria_0384_estilo3.png,Aquela informação que some da cabeça fica guardada no Zappelin.
+385,1,galeria_0385_estilo1.png,assets/galeria_0385_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+386,2,galeria_0386_estilo2.png,assets/galeria_0386_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+387,3,galeria_0387_estilo3.png,assets/galeria_0387_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+388,1,galeria_0388_estilo1.png,assets/galeria_0388_estilo1.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+389,2,galeria_0389_estilo2.png,assets/galeria_0389_estilo2.png,Acorda sem aquela sensação de “tinha algo importante…”. ✅
+390,3,galeria_0390_estilo3.png,assets/galeria_0390_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+391,1,galeria_0391_estilo1.png,assets/galeria_0391_estilo1.png,"Uma conversa, todas as listas. Você só fala e eu salvo."
+392,2,galeria_0392_estilo2.png,assets/galeria_0392_estilo2.png,Uma mensagem resolve. Sem abrir 5 apps. ⚡
+393,3,galeria_0393_estilo3.png,assets/galeria_0393_estilo3.png,"No embalo da mensagem, sem culpa de app que você nunca abre."
+394,1,galeria_0394_estilo1.png,assets/galeria_0394_estilo1.png,"Interface virou conversa. Você fala, o Zappelin organiza."
+395,2,galeria_0395_estilo2.png,assets/galeria_0395_estilo2.png,Simples assim. ✨
+396,3,galeria_0396_estilo3.png,assets/galeria_0396_estilo3.png,Delegar lembrete não é preguiça — é espaço pra respirar.
+397,1,galeria_0397_estilo1.png,assets/galeria_0397_estilo1.png,Tecnologia que some na conversa e aparece quando você precisa.
+398,2,galeria_0398_estilo2.png,assets/galeria_0398_estilo2.png,Eu seguro as pontas soltas enquanto você respira. 💚
+399,3,galeria_0399_estilo3.png,assets/galeria_0399_estilo3.png,Do neurônio pro chat — sem atrito.
+400,1,galeria_0400_estilo1.png,assets/galeria_0400_estilo1.png,"Manda na hora que vier. Quando você precisar de novo, ela tá lá, esperando."
