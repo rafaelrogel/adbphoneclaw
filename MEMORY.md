@@ -167,6 +167,13 @@
 **Config salva hoje:** `/usr/share/wireplumber/wireplumber.conf` → `monitor.bluez.properties`: `bluez5.hfphsp-backend="ofono"`, `bluez5.codecs=["cvsd"]`, `bluez5.hw-offload-sco=false`. `/usr/sbin/ofonod` patchado. `disable_esco=N`. oFono enabled+running; wireplumber backend ofono.
 
 **NUNCA:** spammar +351912540117 (test number) — 1 call por validação.
+
+**ATUALIZAÇÃO 2026-07-15 19:37 (pré-reboot):**
+- Host BT **wedged de novo** (firmware adapter Qualcomm USB crasheado por testes SCO da tarde: dial/eSCO/hcitool cmd 0x0028). Sintoma: `hcitool inq` acha celular mas `hcitool cc`/`bluetoothctl connect` dão I/O error / not permitted / not available. Reset adapter (down/up, restart bt, modprobe) NÃO curou — igual wedge da manhã.
+- **CURA = reboot do host** (Rafael confirmou). Reboot derruba sessão do agente; ao voltar, BT curado.
+- Celular: connection policy HFP/A2DP virou **0** (zerada 16:17 hoje, durante re-pareamento/wedge). Celular não auto-conecta. Após host voltar: celular JÁ VÊ host em scan (`hciconfig hci0 piscan` faz host aparecer em 'Dispositivos disponíveis' do celular como homelab666). Restaurar policy via toque UI em detalhes do device OU re-pair.
+- Próximo teste SCO: `bash tools/hfp_sco_test.sh` (host inicia SCO CVSD clássico via Create Synchronous Connection 0x01 0x0028, packet HV1/2/3, voice 0x0060). Se celular insistir eSCO e host rejeitar, tentar Accept Synchronous Connection manual (0x01 0x0029) ou dongle BT outro.
+- **Pipeline pós-reboot:** oFono patched (CVSD) ativo, wireplumber backend ofono, disable_esco=N. Tudo sobe no boot (ofono enabled). Só reconectar celular e testar SCO.
 - **20:40 atualizacao:** durante debug SCO, o RADIO BR/EDR (classic) do adapter wedged.
   - Sintoma: `hcitool inq` vazio, `btmgmt find` soh acha LE, `hcitool cc 50:13:1D:F5_E6_FC` -> "Can't create connection: Input/output error". hciconfig hci0 UP RUNNING PSCAN mas BR/EDR inquiry/page falha (HW I/O error no HCI).
   - Causa provavel: parametros SCO/eSCO ruins nos testes crascharam firmware do adapter (Realtek/MediaTek/Intel CNVi, USB 1-8).
