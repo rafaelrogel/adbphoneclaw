@@ -184,6 +184,13 @@
 - **CONCLUSÃO:** moto g35 só negocia eSCO; adapter Qualcomm USB deste host não suporta eSCO → **SCO link IMPOSSÍVEL com este hardware**. Sem SCO = sem áudio HFP.
 - **SOLUÇÃO:** comprar/conectar **dongle BT USB outro** (chipset CSR ou Realtek que suporte eSCO nativamente). Trocar hci0 pelo dongle, repetir fluxo (parear, oFono Dial, `bash tools/hfp_sco_test.sh`). Dongle que aceita eSCO CVSD deve completar SCO e criar nós `bluez_*` no PipeWire.
 - `tools/hfp_sco_test.sh` dispara o teste corretamente; gargalo é o adapter, não o software. `tools/patch_ofono_cvsd.sh` segue necessário (força CVSD, evita mSBC que também quebra).
+
+**DONGLE CSR DETECTADO (2026-07-15 21:00, pré-reboot):**
+- Dongle USB: **Cambridge Silicon Radio 0a12:0001** (hci1, BD 00:1A:7D:DA:71:13). CSR = suporta eSCO nativamente.
+- bluetoothctl list mostrou dongle como `homelab666 #2 [default]` mas `select hci1` falhou ("not available") — bluetoothd não registrou direito (plugado em runtime).
+- **CURA = reboot** (dongle sobe limpo). Após reboot: dongle provavelmente vira hci0 ou hci1 (verificar). Configurar discoverable+pairable, parear celular no dongle, oFono Dial, testar SCO eSCO.
+- hci0 (Qualcomm) continua no host — pode ser desabilitado (hciconfig hci0 down) pra evitar conflito, ou deixar os dois.
+- Celular: policy=0 no celular impede auto-conn. Após parear no dongle (novo MAC), policy volta a 100 (auto-conn). Se não, tocar "Conectar" na UI.
 - **20:40 atualizacao:** durante debug SCO, o RADIO BR/EDR (classic) do adapter wedged.
   - Sintoma: `hcitool inq` vazio, `btmgmt find` soh acha LE, `hcitool cc 50:13:1D:F5_E6_FC` -> "Can't create connection: Input/output error". hciconfig hci0 UP RUNNING PSCAN mas BR/EDR inquiry/page falha (HW I/O error no HCI).
   - Causa provavel: parametros SCO/eSCO ruins nos testes crascharam firmware do adapter (Realtek/MediaTek/Intel CNVi, USB 1-8).
