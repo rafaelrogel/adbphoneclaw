@@ -1,0 +1,31 @@
+# Secrets / credentials — NUNCA versionar
+.secrets/
+*.appkey
+credentials.json
+*.key
+
+# Dados volumosos / runtime
+data/
+output/
+output_prev_*/
+*.log
+venv*/
+.venv/
+node_modules/
+
+# Binários / builds
+*.bin
+*.img
+*.iso
+__pycache__/
+*.pyc
+
+# Sessões / estado efêmero
+.clawhub/
+.openclaw/
+sessions/
+*.session
+
+# Local state
+openclaw-workspace-state.json
+monitor/status.json
