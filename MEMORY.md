@@ -185,12 +185,16 @@
 - **SOLUÇÃO:** comprar/conectar **dongle BT USB outro** (chipset CSR ou Realtek que suporte eSCO nativamente). Trocar hci0 pelo dongle, repetir fluxo (parear, oFono Dial, `bash tools/hfp_sco_test.sh`). Dongle que aceita eSCO CVSD deve completar SCO e criar nós `bluez_*` no PipeWire.
 - `tools/hfp_sco_test.sh` dispara o teste corretamente; gargalo é o adapter, não o software. `tools/patch_ofono_cvsd.sh` segue necessário (força CVSD, evita mSBC que também quebra).
 
-**DONGLE CSR DETECTADO (2026-07-15 21:00, pré-reboot):**
-- Dongle USB: **Cambridge Silicon Radio 0a12:0001** (hci1, BD 00:1A:7D:DA:71:13). CSR = suporta eSCO nativamente.
-- bluetoothctl list mostrou dongle como `homelab666 #2 [default]` mas `select hci1` falhou ("not available") — bluetoothd não registrou direito (plugado em runtime).
-- **CURA = reboot** (dongle sobe limpo). Após reboot: dongle provavelmente vira hci0 ou hci1 (verificar). Configurar discoverable+pairable, parear celular no dongle, oFono Dial, testar SCO eSCO.
-- hci0 (Qualcomm) continua no host — pode ser desabilitado (hciconfig hci0 down) pra evitar conflito, ou deixar os dois.
-- Celular: policy=0 no celular impede auto-conn. Após parear no dongle (novo MAC), policy volta a 100 (auto-conn). Se não, tocar "Conectar" na UI.
+**DONGLE CSR DETECTADO (2026-07-15 21:00):**
+- Dongle USB: **Cambridge Silicon Radio 0a12:0001** (hci0 após reboot, BD 00:1A:7D:DA:71:13). CSR = suporta eSCO nativamente.
+- Após reboot: dongle virou **hci0** (default), Qualcomm virou hci1 (desligado). bluetoothctl list: `homelab666 #1 [default]`.
+- **TESTE SCO FALHOU:** `SCO MTU: 48:0` (RX MTU **0** = dongle NÃO tem buffer de recepção SCO). Todos Accept Synchronous Connection retornam `0x12 Invalid HCI Command Parameters` — controller não aceita SCO porque não pode receber dados SCO.
+- Features: eSCO suportado (page 1 bit 1), SCO Flow Control suportado. Mas SCO MTU RX=0 bloqueia tudo.
+- Phone behavior: celular (moto g35) pede eSCO primeiro → timeout (0x10) → fallback SCO clássico → Accept falha (0x12). Isso é novo! Celular ACEITA SCO clássico como fallback, mas controller CSR rejeita por SCO MTU RX=0.
+- **Veredicto:** este dongle CSR NÃO serve pra SCO. Precisa dongle com SCO MTU RX > 0.
+- **Encadeamento:** Qualcomm integrado (hci1) também não serve (rejeita eSCO com 0x0d). Dois adapters testados, nenhum faz SCO.
+- **Próximo passo:** comprar dongle BT USB com SCO MTU RX > 0 (ex: Realtek RTL8761B, ou CSR com firmware atualizado).
+- **20:40 atualizacao:** durante debug SCO, o RADIO BR/EDR (classic) do adapter wedged. Sintoma: `hcitool inq` vazio, `btmgmt find` soh acha LE, `hcitool cc 50:13:1D:F5_E6_FC` -> "Can't create connection: Input/output error". hciconfig hci0 UP RUNNING PSCAN mas BR/EDR inquiry/page falha (HW I/O error no HCI). Causa provavel: parametros SCO/eSCO ruins nos testes crascharam firmware do adapter (Realtek/MediaTek/Intel CNVi, USB 1-8). Tentado e NAO curou: `systemctl restart bluetooth`, kill bluetoothd, `hciconfig hci0 reset`, `btmgmt power off/on`, `modprobe -r btusb; modprobe btusb`, ciclo authorized/reset USB via sysfs (/sys/bus/usb/devices/1-8). SCO bytes tinham fluido antes (rx 212877) entao HW ok, firmware travado. **CURA = reboot do host** (reseta firmware BT). Atencao: reboot pode derrubar essa sessao do agente (roda no host). Fazer quando conveniente. Apos reboot: re-pair moto (nosso lado deu `remove` no bond; moto ainda acha que pareado -> mismatch. Fazer moto esquecer homelab666 + re-pair, OU nosso lado pair novamente). SUSPEITA do SCO 107 original: toggle "Chamadas"/"Phone audio" do BT no celular (re-pareamento pode ter resetado). Apos re-pair, habilitar via uiautomator e testar SCO de novo.
 - **20:40 atualizacao:** durante debug SCO, o RADIO BR/EDR (classic) do adapter wedged.
   - Sintoma: `hcitool inq` vazio, `btmgmt find` soh acha LE, `hcitool cc 50:13:1D:F5_E6_FC` -> "Can't create connection: Input/output error". hciconfig hci0 UP RUNNING PSCAN mas BR/EDR inquiry/page falha (HW I/O error no HCI).
   - Causa provavel: parametros SCO/eSCO ruins nos testes crascharam firmware do adapter (Realtek/MediaTek/Intel CNVi, USB 1-8).
