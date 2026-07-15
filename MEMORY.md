@@ -174,6 +174,16 @@
 - Celular: connection policy HFP/A2DP virou **0** (zerada 16:17 hoje, durante re-pareamento/wedge). Celular não auto-conecta. Após host voltar: celular JÁ VÊ host em scan (`hciconfig hci0 piscan` faz host aparecer em 'Dispositivos disponíveis' do celular como homelab666). Restaurar policy via toque UI em detalhes do device OU re-pair.
 - Próximo teste SCO: `bash tools/hfp_sco_test.sh` (host inicia SCO CVSD clássico via Create Synchronous Connection 0x01 0x0028, packet HV1/2/3, voice 0x0060). Se celular insistir eSCO e host rejeitar, tentar Accept Synchronous Connection manual (0x01 0x0029) ou dongle BT outro.
 - **Pipeline pós-reboot:** oFono patched (CVSD) ativo, wireplumber backend ofono, disable_esco=N. Tudo sobe no boot (ofono enabled). Só reconectar celular e testar SCO.
+
+**ATUALIZAÇÃO 2026-07-15 ~20:15 (teste SCO — BLOQUEIO DE HARDWARE):**
+- Após reboot host BT curado (errors:0). Reconectei celular (host pagina celular, ACL handle 2 UP AUTH ENCRYPT). oFono vê modem, Dial funciona (voicecall01, call active). SLC OK.
+- **SCO link NÃO sobe.** Testado via `hcitool cmd 0x01 0x0028` (Create Synchronous Connection):
+  - eSCO (pkt 0x0038, voice 0x0060 CVSD): controller retorna **0x12 Invalid HCI Command Parameters** → adapter Qualcomm USB **NÃO suporta eSCO**.
+  - SCO clássico (pkt 0x0007, maxlat 0, voice 0x0060): comando aceito (0x00) mas `Synchronous Connect Complete` vem **Link type: eSCO (0x02) Status 0x12** → celular (moto g35) **SEMPRE responde eSCO**, não importa o que host pede.
+  - Celular pede eSCO → controller rejeita 0x0d (Limited Resources) [testado hoje cedo]. Confirmado: controller não faz eSCO de forma alguma.
+- **CONCLUSÃO:** moto g35 só negocia eSCO; adapter Qualcomm USB deste host não suporta eSCO → **SCO link IMPOSSÍVEL com este hardware**. Sem SCO = sem áudio HFP.
+- **SOLUÇÃO:** comprar/conectar **dongle BT USB outro** (chipset CSR ou Realtek que suporte eSCO nativamente). Trocar hci0 pelo dongle, repetir fluxo (parear, oFono Dial, `bash tools/hfp_sco_test.sh`). Dongle que aceita eSCO CVSD deve completar SCO e criar nós `bluez_*` no PipeWire.
+- `tools/hfp_sco_test.sh` dispara o teste corretamente; gargalo é o adapter, não o software. `tools/patch_ofono_cvsd.sh` segue necessário (força CVSD, evita mSBC que também quebra).
 - **20:40 atualizacao:** durante debug SCO, o RADIO BR/EDR (classic) do adapter wedged.
   - Sintoma: `hcitool inq` vazio, `btmgmt find` soh acha LE, `hcitool cc 50:13:1D:F5_E6_FC` -> "Can't create connection: Input/output error". hciconfig hci0 UP RUNNING PSCAN mas BR/EDR inquiry/page falha (HW I/O error no HCI).
   - Causa provavel: parametros SCO/eSCO ruins nos testes crascharam firmware do adapter (Realtek/MediaTek/Intel CNVi, USB 1-8).
