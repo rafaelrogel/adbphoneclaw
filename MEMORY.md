@@ -13,6 +13,19 @@
 - TTS: voz falada real = **sherpa-onnx local PT-BR** (modelo `pt_BR-edresson-low`, offline, sem nuvem). Gero via binário `~/.openclaw/tools/sherpa-onnx-tts` e mando arquivo. Motivo: Rafael quis voz robótica; microsoft é Edge TTS (sem key) → `pt-BR-Daniel` (online) e `8khz` inválidos, caem em fallback (AntonioNeural). Robô de verdade exigiria Azure key. Config `messages.tts.provider` segue microsoft/AntonioNeural (sherpa não é provider nativo do OpenClaw).
 - Caveman mode: sempre ativo (SOUL.md atualizado). `contextInjection: "always"` travado no openclaw.json pra garantir SOUL.md injetado em todo canal (TUI + WhatsApp) persistentemente.
 - Pra voltar ao normal: "stop caveman" ou "normal mode" (só obedeço vindo do Rafael).
+
+## REGRAS DE AUTOMAÇÃO (browser/producer) — Rafael 2026-07-16
+- Scripts Playwright/producer: NUNCA foreground em sessão WhatsApp (trava zap / embedded_run).
+- SEMPRE background: nohup ou setsid, log pra arquivo (ex: tools/producer_browser.log 2>&1).
+- Scripts producer são resumable (pulam clips existentes) — matar e relançar não perde progresso.
+- Zap (WhatsApp) não responde enquanto sessão em embedded_run foreground. Checar antes de rodar browser no zap.
+- Matar processo: usar PID explícito (anti self-match), nunca pkill -f genérico que casa a própria shell.
+
+## REGRAS DE COMUNICAÇÃO (Rafael 2026-07-16)
+- MODO CAVEMAN SEMPRE ATIVO em todas respostas.
+- Falar curto, direto, sem firula. Sem artigos (a, an, the). Sem bajulação, sem enrolação.
+- Fragmentos curtos ok. Termos técnicos exatos. Código normal. Explicação técnica exata mas enxuta.
+- Formato preferido: [coisa] [ação] [motivo]. [próximo passo].
 - Pra voltar ao normal: "stop caveman" ou "normal mode"
 
 ## Modelos configurados (atualizado 2026-07-16)
