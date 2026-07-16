@@ -15,16 +15,12 @@
 - Pra voltar ao normal: "stop caveman" ou "normal mode" (só obedeço vindo do Rafael).
 - Pra voltar ao normal: "stop caveman" ou "normal mode"
 
-## Modelos configurados (2026-07-06, atualizado 2026-07-08)
-- **Provider xiaomi/MiMo** (api.xiaomimimo.com): API key EXISTE em `tts.providers.xiaomi.apiKey` — wirei a mesma key no `models.providers.xiaomi` pra valer pras chamadas de chat.
-- **Default efetivo (desde 2026-07-08): `openrouter/tencent/hy3:free`** com fallbacks: `openrouter/auto` → `xiaomi/mimo-v2.5-pro`.
-  - Ordem pedida pelo Rafael: 1ª opção `openrouter/tencent/hy3:free`; 2ª `openrouter/auto`; 3ª `xiaomi/mimo-v2.5-pro`.
-  - Se `tencent/hy3:free` falhar (timeout/null), cai pra `openrouter/auto`; se também falhar, cai pra MiMo Pro.
-- ⚠️ `mimo-v2.5` (alias "MiMo" plain) é modelo de *reasoning*: devolve `content:""` (joga a resposta no `reasoning_content`) — removido da cadeia pra evitar resposta vazia.
-- **MiMo Pro** (`mimo-v2.5-pro`): texto, reasoning, ~1M ctx, custo quase zero — fallback final confiável.
-- **V2 Omni** (`mimo-v2-omni`): texto+imagem.
-- ❌ Flash e V2 Pro removidos do picker (provider rejeitou schema).
-- **OpenRouter** (`openrouter/auto`): roteamento automático, free/pago conforme rota. Pode ser instável sob carga — por isso tem fallbacks MiMo.
+## Modelos configurados (atualizado 2026-07-16)
+- **Provider xiaomi-eu (Token Plan)** (token-plan-ams.xiaomimimo.com/v1): API key `tp-ekfpad...tb9w64`. Plano Lite Monthly (4.1B credits, válido até 2026-08-16). Modelos disponíveis: mimo-v2.5-pro, mimo-v2.5, mimo-v2.5-asr, mimo-v2.5-tts-voiceclone, mimo-v2.5-tts-voicedesign, mimo-v2.5-tts.
+- **Default efetivo: `xiaomi-eu/mimo-v2.5`** (token plan, primary). Fallback: `xiaomi-eu/mimo-v2.5-pro` (pensamento/reasoning).
+  - openrouter/auto REMOVIDO da cadeia (Rafael pediu limpeza 2026-07-16).
+  - Modelos PAYG antigos (mimo-v2-flash, mimo-v2-pro, mimo-v2-omni) REMOVIDOS da config.
+  - openrouter/tencent/hy3:free REMOVIDO do primary (Rafael priorizou MiMo token plan 2026-07-16).
 
 ## WhatsApp — regras críticas do Rafael (2026-07-08)
 - **NUNCA interagir com terceiros no WhatsApp.** Só o número do Rafael (+351910070509) está no `channels.whatsapp.allowFrom`. Contato `+351911931835` foi REMOVIDO do allowFrom (o bot tinha respondido sozinho esse contato — corrigido).
@@ -43,6 +39,46 @@
 - Exemplo launch bg:
   `cd ~/.openclaw/workspace && . venv_producer/bin/activate && PYTHONPATH=/home/rafael/.openclaw/workspace nohup python3 -u tools/producer_browser.py > tools/producer_browser.log 2>&1 &`
 - Zap sempre relança foreground sozinho ao processar fila — se aparecer producer_* novo (foreground), matar e deixar só o bg.
+
+## HFP RESOLVIDO VIA PIPEWIRE NATIVE (2026-07-16) ✅ BREAKTHROUGH
+- **ROOT CAUSE do "WirePlumber nao cria bluez device":** gate do SEAT no `bluez.lua`. Headless/SSH => `loginctl` seat state = "online" (nunca "active"). Script `monitors/bluez.lua` tem `if logind_plugin then startStopMonitor(get-state)` e so chama `createMonitor()` quando seat=="active". Em servidor headless nunca fica active => monitor bluez NUNCA criado, SEM LOG (silencioso). Perfil main/main-systemwide nao desabilitou logind efetivamente.
+- **FIX aplicado:** patch em `/usr/share/wireplumber/scripts/monitors/bluez.lua` — neutralizei o gate. Substitui bloco `if config.seat_monitoring then logind_plugin = Plugin.find("logind") end` por `config.seat_monitoring = false` + `logind_plugin = nil`. Assim cai no `else monitor = createMonitor()` SEMPRE. Backup original: `/home/rafael/.openclaw/tools/bluez.lua.orig`. (marca A1PATCH no arquivo). ATENCAO: update do pacote wireplumber sobrescreve — reaplicar patch apos upgrade.
+- **Tambem:** `wireplumber.conf` estava CORROMPIDO (bloco lixo `},,` + monitor.bluez.properties solto no fim, de edicao anterior mal feita). Restaurado do pacote (`apt-get download wireplumber` -> dpkg-deb -x -> copiar). Config custom vai em drop-in, NAO no arquivo base.
+- **Drop-in:** `/etc/wireplumber/wireplumber.conf.d/51-bluez-cvsd.conf`:
+  ```
+  monitor.bluez.properties = {
+    bluez5.hfphsp-backend = "native"
+    bluez5.codecs = [ "cvsd" ]
+    bluez5.hw-offload-sco = false
+    bluez5.roles = [ "hfp_hf" "hsp_hs" "a2dp_sink" ]
+  }
+  ```
+- **Service override:** `/etc/systemd/user/wireplumber.service.d/override.conf` => `Environment=WIREPLUMBER_PROFILE=main-systemwide` (+ WIREPLUMBER_DEBUG=I opcional debug).
+- **RESULTADO:** `bluetoothctl connect 50:13:1D:F5:E6:FC` = SUCCESS. `bluez_card.50_13_1D_F5_E6_FC` criado. Profile ativo: **audio-gateway** ("A2DP Source & HSP/HFP AG" = descreve roles do REMOTO/celular; PC conecta como HF). Nós HFP (bluez_input/output) surgem so com SCO ativo (durante chamada).
+- **DISCAR/NATUREZA (sem oFono, sem ADB!):** WirePlumber registra `org.pipewire.Telephony` no session bus. Objeto `/org/pipewire/Telephony/ag1` (Address=celular). Interface `org.ofono.VoiceCallManager` com metodos: **.Dial (s = numero)**, .HangupAll, .GetCalls, .SendTones (s), .HoldAndAnswer, etc. Tambem `org.pipewire.Telephony.AudioGatewayTransport1`: .Activate, Codec (0=CVSD), State (idle/active), RejectSCO.
+  - Discar: `busctl --user call org.pipewire.Telephony /org/pipewire/Telephony/ag1 org.ofono.VoiceCallManager Dial s "+351XXXXXXXXX"`
+  - Desligar (CORRETO): `busctl --user call org.pipewire.Telephony /org/pipewire/Telephony/ag1 org.ofono.VoiceCallManager HangupAll`  (**NAO** usar AudioGateway1.HangupAll — nao encerra call ativa)
+  - Estado real da call: `GetCalls` -> `"State" s "active"` (Transport.State property MENTE, fica "pending" mesmo com SCO up)
+- **VOICE AGENT COMPLETO FUNCIONANDO (2026-07-16 23:5x):** `tools/voice_agent.py` provado em chamada real.
+  - Pipeline: `bluez_input -> Vosk STT (vosk-model-small-pt-0.3) -> LLM MiMo (mimo-v2.5, token plan) -> sherpa-onnx TTS (pt_BR-edresson-low) -> bluez_output`.
+  - Comprovado: caller falou "comigo amigos"/"oi" -> STT transcreveu -> MiMo respondeu PT-BR -> TTS falou -> Rafael ouviu. SCO 31229, RX 1.6MB (audio bidirecional real).
+  - STT: `pw-record --target <bluez_input_id> --format s16 --rate 8000 --channels 1 -` (stdout) -> Vosk KaldiRecognizer 8kHz. Endpoint (AcceptWaveform True) = frase final.
+  - TTS: `~/.openclaw/tools/sherpa-onnx-tts/runtime/bin/sherpa-onnx-offline-tts` com modelo edresson-low (16kHz). Play via `pw-play --target <bluez_output_id> --format s16 --rate 16000 --channels 1`.
+  - LLM: POST `https://token-plan-ams.xiaomimimo.com/v1/chat/completions`, Bearer `tp-ekfpad...`, model `mimo-v2.5`, campo `max_tokens` (NAO `max_completion_tokens` — esse retorna vazio).
+  - Nós bluez: IDs mudam a cada call (pw-dump parse dinamico). bluez_input=source (caller), bluez_output=sink (fala do A1).
+  - Uso: `python3 tools/voice_agent.py +351912540117` (roda em bg, log tools/voice_agent.log). Matar: `pgrep -f "voice_agent[.]py"` + kill -9 (EVITAR pkill -f generico = self-match na shell).
+  - Bug corrigido: `urllib.request.Request` (modulo nao é chamavel).
+- **Adapter:** Qualcomm hci0, BD 74:C6:3B:87:06:88, SCO MTU 50:8 (RX>0 OK, faz SCO). oFono INACTIVE (native backend nao precisa).
+- **PROXIMO (opcional):** barge-in (interromper A1 falando), personalidade/roteiro telemarketing configuravel via --prompt, multi-call, gravar chamadas.
+
+## HFP/SCO status (2026-07-16, HISTORICO - superado pelo fix acima)
+- Rádio BT wedged durante testes SCO → reboot curou (adapter agora hci0, não hci1).
+- oFono desabilitado (native backend configurado).
+- Bond do moto perdido (precisa re-pair).
+- WirePlumber não cria bluez5 device (problema persistente em ambos backends ofono/native).
+- Bus mismatch (PipeWire=session bus, oFono=system bus) era um fator no backend ofono.
+- Próximo passo: re-pair moto + testar se WirePlumber native cria device com radio saudável.
+- Dongle NÃO resolve (mesma camada software). Hardware Qualcomm ok (SCO MTU 50:8).
 
 ## Objetivos
 - Desenvolver negócios
