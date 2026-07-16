@@ -1,12 +1,12 @@
 {
   "lastChecks": {
-    "email": 1784154103,
-    "calendar": 1784154103,
-    "weather": 1784154103,
-    "mentions": 1784154103,
-    "pollyreach": 1784154103,
-    "memoryMaintenance": 1784125158,
-    "gateway": 1784125158
+    "email": 1784161200,
+    "calendar": 1784161200,
+    "weather": 1784161200,
+    "mentions": 1784161200,
+    "pollyreach": 1784161200,
+    "memoryMaintenance": 1784161200,
+    "gateway": 1784161200
   },
-  "notes": "2026-07-15 22:20Z heartbeat: sem novidade. email gmail_loop 0 novos (22:20). calendar/social nao config. pollyreach sem token (cego). weather: noite, irrelevant p/ sair. cron: jobs ok. healthcheck 22:00 Infra OK (docker 6/6, nginx 4/4). nada urgente."
+  "notes": "2026-07-16 00:20Z heartbeat: sem novidade. email check 0 novos (zoho contato@zappelin). calendar/social nao config. pollyreach sem token (cego, balance.sh sem token). weather: 00:20Z noite, irrelev p/ sair. cron jobs ok. nada urgente."
 }

@@ -61,19 +61,29 @@ def auth_protected_sites():
     return names
 
 
+def _curl_code(name):
+    try:
+        r = subprocess.run(
+            ["curl", "-k", "-s", "-o", "/dev/null", "-m", "3", "-w",
+             "%{http_code}", "-H", f"Host: {name}", "https://127.0.0.1/"],
+            capture_output=True, text=True, timeout=5)
+        return r.stdout.strip() or "000"
+    except Exception:
+        return "ERR"
+
+
 def check_sites():
     auth = auth_protected_sites()
     out = []
     for name in nginx_sites():
-        code = "ERR"
-        try:
-            r = subprocess.run(
-                ["curl", "-k", "-s", "-o", "/dev/null", "-m", "3", "-w",
-                 "%{http_code}", "-H", f"Host: {name}", "https://127.0.0.1/"],
-                capture_output=True, text=True, timeout=5)
-            code = r.stdout.strip() or "000"
-        except Exception:
-            code = "ERR"
+        # retry 2x pra evitar falso alerta por blip transitório (ex: 000)
+        code = "000"
+        for _ in range(2):
+            code = _curl_code(name)
+            if code.startswith(("2", "3")) or code == "401":
+                break
+            import time
+            time.sleep(1)
         out.append({"name": name, "code": code,
                     "ok": code.startswith(("2", "3")) or
                          (code == "401" and name in auth)})
