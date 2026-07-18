@@ -103,10 +103,13 @@ def get_bluez_node_ids():
         inp = outp = None
         for o in d:
             if o.get("type") == "PipeWire:Interface:Node":
-                n = o.get("info", {}).get("props", {}).get("node.name", "")
-                if n.startswith("bluez_input"):
+                props = o.get("info", {}).get("props", {})
+                n = props.get("node.name", "")
+                mc = props.get("media.class", "")
+                # bluez_input Source = voz do caller (gravar); bluez_output Sink = fala A1 (tocar)
+                if "bluez_input" in n and mc == "Audio/Source":
                     inp = o["id"]
-                elif n.startswith("bluez_output"):
+                elif "bluez_output" in n and mc == "Audio/Sink":
                     outp = o["id"]
         return inp, outp
     except Exception as e:
@@ -179,12 +182,20 @@ def dial_hfp_pw(phone_number: str):
     proc.wait()
     if not answered:
         return None, None
-    activate_hfp_ag_profile()
+    # NOTA: nao forcar set-profile audio-gateway aqui. No HFP AG os nos SCO
+    # (bluez_input/bluez_output) aparecem sozinhos quando a chamada fica
+    # 'active'. Setar perfil antes do SCO subir reinicia o transporte SCO
+    # e impede que os nos criem (observado 2026-07-18).
     in_id = out_id = None
-    for _ in range(60):
+    tried_profile = False
+    for i in range(120):
         in_id, out_id = get_bluez_node_ids()
         if in_id and out_id:
             break
+        # ultimo recurso: se SCO nao subiu em ~10s, tenta forcar perfil AG
+        if not tried_profile and i == 20:
+            activate_hfp_ag_profile()
+            tried_profile = True
         time.sleep(0.5)
     if not (in_id and out_id):
         logger.error("Nos bluez (SCO) nao apareceram apos atender.")
