@@ -2,6 +2,7 @@ import os
 import sys
 import time
 import re
+import json
 import logging
 import struct
 import subprocess
@@ -85,9 +86,131 @@ def dial_hfp_pw(phone_number: str):
 
 
 def hangup_hfp_pw():
-    """Desliga chamada HFP e remove loopbacks (pw_call.sh hangup)."""
+    """Desliga chamada HFP (pw_call.sh hangup)."""
     logger.info("Desligando chamada HFP (pw_call.sh hangup)...")
     subprocess.run(["bash", PW_CALL_SH, "hangup"], check=False)
+
+
+def get_bluez_node_ids():
+    """
+    Retorna (input_id, output_id) dos nos SCO via pw-dump.
+    PipeWire expoe os nos mesmo quando o card profile esta 'off' (pactl nao enxerga),
+    entao usamos os node IDs diretos com pw-record/pw-play (ver tools/voice_agent.py).
+    """
+    try:
+        out = subprocess.run(["pw-dump"], capture_output=True, text=True).stdout
+        d = json.loads(out)
+        inp = outp = None
+        for o in d:
+            if o.get("type") == "PipeWire:Interface:Node":
+                n = o.get("info", {}).get("props", {}).get("node.name", "")
+                if n.startswith("bluez_input"):
+                    inp = o["id"]
+                elif n.startswith("bluez_output"):
+                    outp = o["id"]
+        return inp, outp
+    except Exception as e:
+        logger.error(f"pw-dump falhou: {e}")
+        return None, None
+
+
+def pw_record_segment(node_id, out_path, max_seconds: int = 8):
+    """Grava segmento do bluez_input via pw-record (s16/16k/mono) ate max_seconds."""
+    cmd = ["pw-record", "--target", str(node_id), "--format", "s16",
+           "--rate", "16000", "--channels", "1", "--max-time", str(max_seconds), out_path]
+    try:
+        subprocess.run(cmd, capture_output=True, timeout=max_seconds + 5)
+    except Exception as e:
+        logger.error(f"pw-record erro: {e}")
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 44:
+        return out_path
+    return None
+
+
+def pw_play_wav(node_id, wav_path):
+    """Reproduz wav no bluez_output via pw-play (formato lido do header)."""
+    subprocess.run(["pw-play", "--target", str(node_id), wav_path],
+                   capture_output=True, timeout=30)
+
+
+def dial_hfp_pw(phone_number: str):
+    """
+    Disca via PipeWire HFP nativo (pw_call.sh).
+    Retorna (input_node_id, output_node_id) dos nos SCO, ou (None, None).
+    Usa pw-dump (node IDs) + pw-record/pw-play no loop de voz.
+    """
+    clean = re.sub(r"[^0-9+]", "", phone_number)
+    logger.info(f"Disando HFP PipeWire para {clean}...")
+    proc = subprocess.Popen(
+        ["bash", PW_CALL_SH, clean],
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+    )
+    answered = False
+    for line in proc.stdout:
+        line = line.strip()
+        logger.info(f"[pw_call] {line}")
+        if line == "ANSWERED":
+            answered = True
+            break
+        if "timeout" in line or "encerrada" in line:
+            proc.wait()
+            return None, None
+    proc.wait()
+    if not answered:
+        return None, None
+    in_id = out_id = None
+    for _ in range(60):
+        in_id, out_id = get_bluez_node_ids()
+        if in_id and out_id:
+            break
+        time.sleep(0.5)
+    if not (in_id and out_id):
+        logger.error("Nos bluez (SCO) nao apareceram apos atender.")
+        hangup_hfp_pw()
+        return None, None
+    logger.info(f"HFP pronto: bluez_input={in_id} bluez_output={out_id}")
+    return in_id, out_id
+
+
+def run_hfp_loop(input_id, output_id, contact, active_device_id):
+    """
+    Loop de voz HFP nativo: pw-record no bluez_input (ASR) e pw-play no
+    bluez_output (TTS). Node IDs passados direto (pactl nao enxerga os nos).
+    """
+    logger.info("=== LOOP HFP (pw-record/pw-play) ===")
+    saud = "Olá, aqui é A1, o assistente do Rafael. Em que posso ajudar?"
+    _tts_play_hfp(saud, output_id)
+
+    conversando = True
+    while conversando:
+        seg = pw_record_segment(input_id, "temp_input.wav", max_seconds=8)
+        if not seg:
+            logger.info("Sem audio (silencio/EOF). Aguardando...")
+            continue
+        transcription = mimo.transcribe_audio(seg)
+        if os.path.exists("temp_input.wav"):
+            os.remove("temp_input.wav")
+        if not transcription:
+            logger.info("Transcricao em branco. Tentando novamente...")
+            continue
+        print(f"\n[Interlocutor]: {transcription}")
+        if "tchau" in transcription.lower() or "desligar" in transcription.lower():
+            conversando = False
+        response_text = generate_agent_response(transcription)
+        print(f"[PhoneClaw Agent]: {response_text}\n")
+        _tts_play_hfp(response_text, output_id)
+
+    logger.info("Encerrando chamada HFP...")
+    hangup_hfp_pw()
+
+
+def _tts_play_hfp(text, output_id):
+    """Sintetiza via MiMo e reproduz no bluez_output via pw-play."""
+    path = "temp_tts.wav"
+    if mimo.synthesize_speech(text, path):
+        pw_play_wav(output_id, path)
+    else:
+        logger.error("Falha na sintese de voz (TTS).")
 
 
 def make_wav_header(pcm_data_len: int, sample_rate: int = 16000, channels: int = 1, bits_per_sample: int = 16) -> bytes:
@@ -172,6 +295,10 @@ def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, a
         if mon_idx is not None:
             logger.info(f"Input transcricao -> monitor sink BT idx {mon_idx} (voz do interlocutor)")
             input_idx = mon_idx
+    if use_hfp:
+        run_hfp_loop(input_idx, output_idx, contact, active_device_id)
+        return
+
     logger.info("==================================================")
     logger.info("INICIANDO CONVERSAÇÃO DE VOZ (CHAMADA ATIVA VIA USB)")
     logger.info("Fale próximo ao microfone do Bluetooth.")
