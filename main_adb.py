@@ -114,6 +114,27 @@ def get_bluez_node_ids():
         return None, None
 
 
+def activate_hfp_ag_profile():
+    """
+    Ativa perfil 'audio-gateway' (HFP AG) no card bluez do moto.
+    Sem isso o card fica 'off' e os nos SCO (bluez_input/bluez_output)
+    nao aparecem mesmo com a chamada ativa.
+    """
+    try:
+        out = subprocess.run(["pw-dump"], capture_output=True, text=True).stdout
+        d = json.loads(out)
+        for o in d:
+            if o.get("type") == "PipeWire:Interface:Device" and "moto" in str(o):
+                card_id = o["id"]
+                r = subprocess.run(["wpctl", "set-profile", str(card_id), "audio-gateway"],
+                                   capture_output=True, text=True)
+                logger.info(f"set-profile audio-gateway no card {card_id}: rc={r.returncode}")
+                return card_id
+    except Exception as e:
+        logger.error(f"activate_hfp_ag_profile falhou: {e}")
+    return None
+
+
 def pw_record_segment(node_id, out_path, max_seconds: int = 8):
     """Grava segmento do bluez_input via pw-record (s16/16k/mono) ate max_seconds."""
     cmd = ["pw-record", "--target", str(node_id), "--format", "s16",
@@ -158,6 +179,7 @@ def dial_hfp_pw(phone_number: str):
     proc.wait()
     if not answered:
         return None, None
+    activate_hfp_ag_profile()
     in_id = out_id = None
     for _ in range(60):
         in_id, out_id = get_bluez_node_ids()
