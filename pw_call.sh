@@ -4,11 +4,12 @@
 #  - Codec forcado CVSD (wireplumber drop-in 51-bluez-cvsd.conf); mSBC falha SCO.
 #  - Transport.State property MENTE (fica "pending"); detectar atendimento via
 #    VoiceCallManager.GetCalls -> call State=active.
-#  - Ao atender, nos bluez_input/bluez_output aparecem sozinhos (SCO up). Loopback depois.
+#  - Ao atender, nos bluez_input/bluez_output aparecem sozinhos (SCO up).
 #
 # Uso:
-#   pw_call.sh <numero>   -> disca, roteia audio ao atender
-#   pw_call.sh hangup     -> desliga + remove loopbacks
+#   pw_call.sh <numero>        -> disca, roteia audio (modo viva-voz humano)
+#   pw_call.sh agent <numero>  -> disca, roteia p/ agente (TTS->phone, interlocutor->speakers)
+#   pw_call.sh hangup          -> desliga + remove loopbacks
 set -u
 SVC=org.pipewire.Telephony
 AG=/org/pipewire/Telephony/ag1
@@ -30,10 +31,13 @@ if [ "${1:-}" = "hangup" ]; then
   exit 0
 fi
 
-[ -z "${1:-}" ] && { echo "uso: $0 <numero|hangup>"; exit 1; }
+MODE="human"
+NUM="${1:-}"
+if [ "${1:-}" = "agent" ]; then MODE="agent"; NUM="${2:-}"; fi
+[ -z "$NUM" ] && { echo "uso: $0 <numero|agent <numero>|hangup>"; exit 1; }
 
-busctl --user call "$SVC" "$AG" "$AGI" Dial s "$1" >/dev/null 2>&1
-echo "=> discando $1 ... atende no moto"
+busctl --user call "$SVC" "$AG" "$AGI" Dial s "$NUM" >/dev/null 2>&1
+echo "=> discando $NUM ($MODE) ... atende no moto"
 
 # espera atender (call State=active)
 answered=0
@@ -59,8 +63,17 @@ if [ -z "$cap" ] || [ -z "$pbk" ]; then
 fi
 echo "nos: cap=$cap pbk=$pbk"
 
-# roteia
 unload_loopbacks
+if [ "$MODE" = "agent" ]; then
+  # Agente: TTS vai p/ phone via bluez_output (play_audio_stream do Python).
+  # Aqui soh roteia interlocutor (bluez_input) -> alto-falante p/ monitorar.
+  # NAO cria mic->phone (agente fala, nao o ambiente).
+  pactl load-module module-loopback source="$cap" sink=@DEFAULT_SINK@ latency_msec=30 >/dev/null && echo "monitor interlocutor->speakers OK"
+  echo "AGENT_READY cap=$cap pbk=$pbk"
+  exit 0
+fi
+
+# Humano (viva-voz): roteia dos dois lados.
 pactl load-module module-loopback source="$cap" sink=@DEFAULT_SINK@ latency_msec=30 >/dev/null && echo "loopback remoto->speaker OK"
 pactl load-module module-loopback source=@DEFAULT_SOURCE@ sink="$pbk" latency_msec=30 >/dev/null && echo "loopback mic->phone OK"
 echo "=> audio roteado (CVSD). fala. hangup: $0 hangup"

@@ -1,8 +1,10 @@
 import os
 import sys
 import time
+import re
 import logging
 import struct
+import subprocess
 import requests
 from client_adb.config import (
     BLUETOOTH_INPUT_DEVICE_NAME,
@@ -21,6 +23,9 @@ from client_adb.audio_bridge import (
 )
 from client_adb.adb_controller import AdbController
 
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PW_CALL_SH = os.path.join(SCRIPT_DIR, "pw_call.sh")
+
 # Configuração do Logger
 logging.basicConfig(
     level=logging.INFO,
@@ -37,6 +42,53 @@ adb = AdbController()
 
 # Histórico da conversa por voz
 voice_history = []
+
+def dial_hfp_pw(phone_number: str):
+    """
+    Disca via PipeWire HFP nativo (pw_call.sh agent).
+    Retorna (input_idx, output_idx, proc) ou (None, None, None) em falha.
+    Em modo agente o .sh sobe soh loopback de monitor (interlocutor->speakers)
+    e imprime 'AGENT_READY cap=<src> pbk=<sink>'. O TTS do agente vai para o
+    bluez_output via play_audio_stream (feito no loop de voz).
+    """
+    clean = re.sub(r"[^0-9+]", "", phone_number)
+    logger.info(f"Disando HFP PipeWire (agent) para {clean}...")
+    proc = subprocess.Popen(
+        ["bash", PW_CALL_SH, "agent", clean],
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+    )
+    cap = pbk = None
+    for line in proc.stdout:
+        line = line.strip()
+        logger.info(f"[pw_call] {line}")
+        if line.startswith("AGENT_READY"):
+            for tok in line.split():
+                if tok.startswith("cap="):
+                    cap = tok.split("=", 1)[1]
+                elif tok.startswith("pbk="):
+                    pbk = tok.split("=", 1)[1]
+            break
+        if "AVISO" in line or "timeout" in line or "nao atendeu" in line or "encerrada" in line:
+            proc.wait()
+            return None, None, None
+    proc.wait()
+    if not (cap and pbk):
+        return None, None, None
+    input_idx = find_device_index(cap, is_input=True)
+    output_idx = find_device_index(pbk, is_input=False)
+    if input_idx is None or output_idx is None:
+        logger.error(f"Dispositivos bluez nao resolvidos no sounddevice: cap={cap} pbk={pbk}")
+        hangup_hfp_pw()
+        return None, None, None
+    logger.info(f"HFP pronto: input_idx={input_idx} output_idx={output_idx}")
+    return input_idx, output_idx, None
+
+
+def hangup_hfp_pw():
+    """Desliga chamada HFP e remove loopbacks (pw_call.sh hangup)."""
+    logger.info("Desligando chamada HFP (pw_call.sh hangup)...")
+    subprocess.run(["bash", PW_CALL_SH, "hangup"], check=False)
+
 
 def make_wav_header(pcm_data_len: int, sample_rate: int = 16000, channels: int = 1, bits_per_sample: int = 16) -> bytes:
     """
@@ -105,14 +157,16 @@ def generate_agent_response(user_text: str) -> str:
     voice_history.append({"role": "assistant", "content": response})
     return response
 
-def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, active_device_id: str):
+def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, active_device_id: str, monitor_input: bool = True, use_hfp: bool = False):
     """
     Loop principal de conversação de voz na chamada telefônica.
     Grava os turnos e salva a ligação inteira localmente no Homelab.
     """
     # PhoneClaw: transcricao usa MONITOR do sink BT (voz que VEM da chamada),
     # nao mic local -> elimina eco acustico do fone pro mic.
-    if BLUETOOTH_OUTPUT_DEVICE_NAME:
+    # Em modo HFP (use_hfp) o input ja eh o bluez_source (voz do interlocutor),
+    # entao nao sobrescreve com monitor.
+    if monitor_input and BLUETOOTH_OUTPUT_DEVICE_NAME:
         mon_name = BLUETOOTH_OUTPUT_DEVICE_NAME + ".monitor"
         mon_idx = find_device_index(mon_name, is_input=True)
         if mon_idx is not None:
@@ -204,8 +258,11 @@ def run_voice_conversation_loop(input_idx: int, output_idx: int, contact: str, a
         if reply_full:
             pcm_segments.append(reply_full)
 
-    logger.info("Desligando chamada via ADB...")
-    adb.end_call(active_device_id)
+    logger.info("Desligando chamada...")
+    if use_hfp:
+        hangup_hfp_pw()
+    else:
+        adb.end_call(active_device_id)
     
     # 5. Costura e grava a chamada finalizada no Homelab
     if pcm_segments:
@@ -278,10 +335,16 @@ def main():
         if opcao == "1":
             num = input("Número para ligar (ex: +5511999999999): ").strip()
             if num:
-                if adb.make_gsm_call(num, active_device_id):
-                    print("Aguardando 5 segundos para a chamada completar...")
-                    time.sleep(5)
-                    run_voice_conversation_loop(input_idx, output_idx, num, active_device_id)
+                print("Disando via HFP PipeWire (pw_call.sh agent)...")
+                in_idx, out_idx, _ = dial_hfp_pw(num)
+                if in_idx is None or out_idx is None:
+                    print("Falha HFP. Tentando fallback ACTION_CALL via ADB...")
+                    if adb.make_gsm_call(num, active_device_id):
+                        print("Aguardando 5 segundos para a chamada completar...")
+                        time.sleep(5)
+                        run_voice_conversation_loop(input_idx, output_idx, num, active_device_id)
+                else:
+                    run_voice_conversation_loop(in_idx, out_idx, num, active_device_id, monitor_input=False, use_hfp=True)
             else:
                 print("Número inválido.")
                 
